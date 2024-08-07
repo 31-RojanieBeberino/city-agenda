@@ -351,31 +351,8 @@ input, select, textarea, ul, li, button,
 }
 
 
-.slider-inner{
-    display:flex;
-}
 
-.slider-item img {
-    height: 400px;
-    object-fit: cover;
-  }
-  .slider-item {
-    text-align: center;
-  }
-  .slider-caption {
-    position: relative;
-    top: auto;
-    bottom: 0;
-  }
-  .slider-control-prev, .slider-control-next {
-    background-color: #6c757d;
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+
 
 
 
@@ -394,6 +371,73 @@ input, select, textarea, ul, li, button,
         width: 100%;
     }
 }
+
+
+.slide img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.owl-carousel{
+    display: flex;
+}
+
+.owl-carousel .owl-item{
+    flex:1!important;
+}
+
+
+.slider {
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+.slide{
+    padding:10px;
+}
+
+.slider-section{
+    position: relative;
+}
+
+.slider-section .prev, .slider-section .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #741774;
+    border-radius: 50px;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    width: 60px;
+    height: 60px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.slider-section .prev i, .slider-section .next i{
+    font-size: 50px;
+}
+
+.slider-section .prev {
+    left: -60px;
+}
+.slider-section .next {
+    right: -60px;
+}
+
+
+
+
+
 
 
 
