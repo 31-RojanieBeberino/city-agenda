@@ -1,0 +1,14 @@
+@media screen and (max-width:500px){
+    .nav-control{
+        flex-direction: column;
+    }
+
+    .footer-Logo{
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-social{
+        align-items: center;
+    }
+}
