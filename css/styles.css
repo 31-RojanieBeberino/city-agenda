@@ -234,12 +234,12 @@ input, select, textarea, ul, li, button,
 .btn-secondary{
     width: 100%;
     padding:20px!important;
-    font-size: 18px;
+    font-size: 18px!important;
     font-family: 'General Sans';
-    background-color: #fff;
-    color:#868686;
-    border: 0;
-    box-shadow: 0px 0px 5px #00000056;
+    background-color: #fff!important;
+    color:#868686!important;
+    border: 0!important;
+    box-shadow: 0px 0px 5px #00000056!important;
 }
 
 .btn-secondary:hover{
@@ -264,27 +264,27 @@ input, select, textarea, ul, li, button,
 }
 
 .user-id{
-    position: absolute;
+    position: absolute!important;
     top:20px;
     right:20px;
-    width:60px;
-    height: 60px;
+    width:60px!important;
+    height: 60px!important;
 }
 
 
 .heartIcon{
-    width: 30px;
-    height: 30px;
-    background-color: #00000036;
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 15px;
-    color:#fff;
-    position: absolute;
-    top:200px;
-    right: 20px;
+    width: 30px!important;
+    height: 30px!important;
+    background-color: #00000036!important;
+    border-radius: 50px!important;
+    display: flex!important;
+    align-items: center!important;
+    justify-content: center!important;
+    font-size: 15px!important;
+    color:#fff!important;
+    position: absolute!important;
+    top:270px!important;
+    right: 20px!important;
 }
 
 .card-body{
@@ -353,24 +353,23 @@ input, select, textarea, ul, li, button,
 
 
 
-
-
-
-@media screen and (min-width:576px){
-    .carousel-inner{
-        display: flex;
-    }
-    
-    .carousel-item {
-        display: block;
-        margin-right:0;
-        flex: 0 0 calc(100%/6);
-    }
-
-    .carousel-item img {
-        width: 100%;
-    }
+.category-content .carousel-item {
+    gap:20px;
 }
+
+.category-content .carousel-item img{
+    width: calc(100% / 7);
+    /* margin-right: 20px; */
+}
+
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active{
+    display: flex!important;
+    justify-content: center!important;
+    gap:20px!important;
+}
+
+
 
 
 .slide img{
@@ -378,14 +377,6 @@ input, select, textarea, ul, li, button,
     height: 350px;
     object-fit: cover;
     border-radius: 15px;
-}
-
-.owl-carousel{
-    display: flex;
-}
-
-.owl-carousel .owl-item{
-    flex:1!important;
 }
 
 
@@ -435,13 +426,41 @@ input, select, textarea, ul, li, button,
 }
 
 
+/* Inner pages */
 
 
+.politics{
+    background-image: url('../img/politicsbg.png');
+    background-position: center center;
+    background-size: cover;
+}
+
+.politics-grid-section{
+    padding:60px 20px;
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+}
 
 
+.politics-grid-section h2{
+    font-size: 50px;
+    font-weight: 700;
+}
 
 
-
+.email-btn{
+    display:flex;
+    gap:20px;
+    padding:20px;
+    width:260px;
+    border-radius:50px;
+    color:#000;
+    font-size:16px;
+    text-decoration: none!important;
+    background-color: #DCDCDC;
+    justify-content: center;
+}
 
 
 
