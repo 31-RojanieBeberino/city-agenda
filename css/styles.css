@@ -448,6 +448,33 @@ input, select, textarea, ul, li, button,
     font-weight: 700;
 }
 
+.find-free-political-section{
+    background-color: #FAFAFA!important;
+    padding:60px 20px;
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+}
+
+.find-free-political-section h2{
+    font-size: 45px;
+    font-weight: 700;
+}
+
+
+.miss-out-popular-section{
+    background-color: #FAFAFA!important;
+    padding:60px 20px;
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+}
+
+.miss-out-popular-section h2{
+    font-size: 45px;
+    font-weight: 700;
+}
+
 
 .email-btn{
     display:flex;
