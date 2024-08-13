@@ -1,0 +1,909 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <title>City Agenda</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+
+
+    <style>
+
+        i.bi.bi-arrow-left-short, i.bi.bi-arrow-right-short{
+            font-size: 50px;
+            height: auto!important;
+            width: auto!important;
+            vertical-align: -10px!important;
+        }
+
+        .carousel-control-section{
+            position: relative;
+            width: 170px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .card-bottom div p {
+            margin: 0px!important;
+        }
+
+        .card-bottom div i{
+            height: 1.8em!important;
+        }
+
+        .carousel-control-next, .carousel-control-prev{
+            background-color: #741774;
+            height: 70px;
+            width: 70px;
+            position: relative!important;
+            border-radius: 50px;
+        }
+
+        .politics-grid-section .carousel{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+
+        @media screen and (min-width:576px) {
+            .carousel-inner{
+                display:flex;
+            }
+            
+            .carousel-item{
+                display: block;
+                margin-right:0;
+                flex: 0 0 calc(100%/3);
+            }
+        }
+
+
+        .card{
+           box-shadow: 0px 0px 5px #0000003b;
+           border: 0px;
+           margin: 0 10px;
+           width: 95%;
+        }
+
+        .card-img{
+            width: 100%;
+        }
+
+
+    </style>
+
+
+
+  </head>
+
+
+
+  <body>
+    <nav class="navbar navbar-expand-lg main-nav">
+        <div class="container justify-content-center">
+           <div class="row container-fluid d-flex justify-content-end gap-0">
+                <div class="col-md-5 d-flex align-items-center">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/Logo.png">
+                    </a>
+                    <form class="d-flex align-items-center gap-1 nav-form-search p-2 pe-3 ps-3" role="search">
+                        <i class="bi bi-search"></i>
+                        <input class="form-control me-2" type="search" placeholder="Search City Agenda" aria-label="Search City Agenda">
+                    </form>
+                </div>
+                <button class="navbar-toggler p-2 mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="col-md-7 justify-content-end collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="d-flex gap-3 p-0 justify-content-end align-items-center nav-control">
+                        <button class="new-event">Create New Event</button>
+                        <div class="nav-action d-flex gap-3 align-items-center">
+                            <i class="bi bi-people-fill"></i>
+                            <i class="bi bi-grid-3x3-gap-fill"></i>
+                            <hr>
+                            <i class="bi bi-person-fill"></i>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </nav>
+
+
+
+
+    <section class="container-fluid banner sports">
+        <div class="container d-flex flex-column align-items-center gap-5">
+           <img class="banner-img" src="img/sportsBannerIcon.png">
+        </div>
+    </section>
+
+
+    
+
+
+
+    <section class="container-fluid politics-grid-section main-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 gap-4 d-flex flex-column ">
+                    <h2>Popular Political Event In New Mexico  </h2>
+                    <div class="col-md-9 row">
+                        <div class="col-md-6 drop-cards d-flex flex-column justify-content-center gap-3">
+                            <h4>Select Location</h4>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    My Location
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 drop-cards d-flex flex-column justify-content-center gap-3">
+                            <h4>Select Date</h4>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-justify-left"></i>
+                                    Any Date
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex justify-content-around align-items-end flex-column">
+                    <a href="mailto:" class="email-btn">
+                        <i class="bi bi-envelope-fill"></i>
+                        Get updated by email
+                    </a>
+                    <div class="carousel-control-section">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                            <i class="bi bi-arrow-left-short"></i>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                            <i class="bi bi-arrow-right-short"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card" >
+                            <img class="user-id" src="img/user-img.png">
+                            <i class="bi bi-suit-heart-fill heartIcon"></i>
+                            <img src="img/image-1.png" class="card-img" alt="image-1">
+                            <div class="card-body">
+                                <h3>California Piano Concert Events 2024</h3>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <p>
+                                        Amsterdam <br>
+                                        <span>Schipol Airport</span>
+                                    </p>
+                                </div>
+                                <hr>
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <p>
+                                        17 July 2024<br>
+                                        <span>6:00 Am</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" >
+                            <img class="user-id" src="img/user-img.png">
+                            <i class="bi bi-suit-heart-fill heartIcon"></i>
+                            <img src="img/image-2.png" class="card-img" alt="image-1">
+                            <div class="card-body">
+                                <h3>California Piano Concert Events 2024</h3>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <p>
+                                        Amsterdam <br>
+                                        <span>Schipol Airport</span>
+                                    </p>
+                                </div>
+                                <hr>
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <p>
+                                        17 July 2024<br>
+                                        <span>6:00 Am</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" >
+                            <img class="user-id" src="img/user-img.png">
+                            <i class="bi bi-suit-heart-fill heartIcon"></i>
+                            <img src="img/image-3.png" class="card-img" alt="image-1">
+                            <div class="card-body">
+                            <h3>California Piano Concert Events 2024</h3>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <p>
+                                        Amsterdam <br>
+                                        <span>Schipol Airport</span>
+                                    </p>
+                                </div>
+                                <hr>
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <p>
+                                        17 July 2024<br>
+                                        <span>6:00 Am</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" >
+                            <img class="user-id" src="img/user-img.png">
+                            <i class="bi bi-suit-heart-fill heartIcon"></i>
+                            <img src="img/image-4.png" class="card-img" alt="image-1">
+                            <div class="card-body">
+                            <h3>California Piano Concert Events 2024</h3>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <p>
+                                        Amsterdam <br>
+                                        <span>Schipol Airport</span>
+                                    </p>
+                                </div>
+                                <hr>
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <p>
+                                        17 July 2024<br>
+                                        <span>6:00 Am</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" >
+                            <img class="user-id" src="img/user-img.png">
+                            <i class="bi bi-suit-heart-fill heartIcon"></i>
+                            <img src="img/image-4.png" class="card-img" alt="image-1">
+                            <div class="card-body">
+                            <h3>California Piano Concert Events 2024</h3>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <p>
+                                        Amsterdam <br>
+                                        <span>Schipol Airport</span>
+                                    </p>
+                                </div>
+                                <hr>
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <p>
+                                        17 July 2024<br>
+                                        <span>6:00 Am</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" >
+                            <img class="user-id" src="img/user-img.png">
+                            <i class="bi bi-suit-heart-fill heartIcon"></i>
+                            <img src="img/image-4.png" class="card-img" alt="image-1">
+                            <div class="card-body">
+                            <h3>California Piano Concert Events 2024</h3>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <p>
+                                        Amsterdam <br>
+                                        <span>Schipol Airport</span>
+                                    </p>
+                                </div>
+                                <hr>
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <p>
+                                        17 July 2024<br>
+                                        <span>6:00 Am</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="container-fluid find-free-political-section main-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 gap-4 d-flex flex-column ">
+                    <h2>Find Free Political Events In New Mexico</h2>
+                </div>
+                <div class="col-md-3 d-flex justify-content-around align-items-end flex-column">
+                    <div class="carousel-control-section find-free-political">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#find-free-political" data-bs-slide="prev">
+                            <i class="bi bi-arrow-left-short"></i>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#find-free-political" data-bs-slide="next">
+                            <i class="bi bi-arrow-right-short"></i>
+                        </button> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div id="find-free-political" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card" >
+                            <img class="user-id" src="img/user-img.png">
+                            <i class="bi bi-suit-heart-fill heartIcon"></i>
+                            <img src="img/image-6.png" class="card-img" alt="image-1">
+                            <div class="card-body">
+                                <h3>California Piano Concert Events 2024</h3>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <p>
+                                        Amsterdam <br>
+                                        <span>Schipol Airport</span>
+                                    </p>
+                                </div>
+                                <hr>
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <p>
+                                        17 July 2024<br>
+                                        <span>6:00 Am</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" >
+                            <img class="user-id" src="img/user-img.png">
+                            <i class="bi bi-suit-heart-fill heartIcon"></i>
+                            <img src="img/image-7.png" class="card-img" alt="image-1">
+                            <div class="card-body">
+                                <h3>California Piano Concert Events 2024</h3>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <p>
+                                        Amsterdam <br>
+                                        <span>Schipol Airport</span>
+                                    </p>
+                                </div>
+                                <hr>
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <p>
+                                        17 July 2024<br>
+                                        <span>6:00 Am</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" >
+                            <img class="user-id" src="img/user-img.png">
+                            <i class="bi bi-suit-heart-fill heartIcon"></i>
+                            <img src="img/image-8.png" class="card-img" alt="image-1">
+                            <div class="card-body">
+                            <h3>California Piano Concert Events 2024</h3>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <p>
+                                        Amsterdam <br>
+                                        <span>Schipol Airport</span>
+                                    </p>
+                                </div>
+                                <hr>
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <p>
+                                        17 July 2024<br>
+                                        <span>6:00 Am</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" >
+                            <img class="user-id" src="img/user-img.png">
+                            <i class="bi bi-suit-heart-fill heartIcon"></i>
+                            <img src="img/image-9.png" class="card-img" alt="image-1">
+                            <div class="card-body">
+                            <h3>California Piano Concert Events 2024</h3>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <p>
+                                        Amsterdam <br>
+                                        <span>Schipol Airport</span>
+                                    </p>
+                                </div>
+                                <hr>
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <p>
+                                        17 July 2024<br>
+                                        <span>6:00 Am</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" >
+                            <img class="user-id" src="img/user-img.png">
+                            <i class="bi bi-suit-heart-fill heartIcon"></i>
+                            <img src="img/image-10.png" class="card-img" alt="image-1">
+                            <div class="card-body">
+                            <h3>California Piano Concert Events 2024</h3>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <p>
+                                        Amsterdam <br>
+                                        <span>Schipol Airport</span>
+                                    </p>
+                                </div>
+                                <hr>
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <p>
+                                        17 July 2024<br>
+                                        <span>6:00 Am</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" >
+                            <img class="user-id" src="img/user-img.png">
+                            <i class="bi bi-suit-heart-fill heartIcon"></i>
+                            <img src="img/image-11.png" class="card-img" alt="image-1">
+                            <div class="card-body">
+                            <h3>California Piano Concert Events 2024</h3>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <p>
+                                        Amsterdam <br>
+                                        <span>Schipol Airport</span>
+                                    </p>
+                                </div>
+                                <hr>
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <p>
+                                        17 July 2024<br>
+                                        <span>6:00 Am</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="container-fluid event-formats-section main-section">
+        <div class="container">
+            <h2>Explore Politics Event Formats</h2>
+            <div class="row event-formats-cats mt-5">
+                <div class="col-md-3 p-3">
+                    <img src="img/eb-event-img.png">
+                    <a href="#" class="catLink">Conference</a>
+                </div>
+                <div class="col-md-3 p-3">
+                    <img src="img/eb-event-img1.png">
+                    <a href="#" class="catLink">Seminars</a>
+                </div>
+                <div class="col-md-3 p-3">
+                    <img src="img/eb-event-img2.png">
+                    <a href="#" class="catLink">Expos</a>
+                </div>
+                <div class="col-md-3 p-3">
+                    <img src="img/eb-event-img3.png">
+                    <a href="#" class="catLink">Conventions</a>
+                </div>
+                <div class="col-md-3 p-3">
+                    <img src="img/eb-event-img4.png">
+                    <a href="#" class="catLink">Festivals</a>
+                </div>
+                <div class="col-md-3 p-3">
+                    <img src="img/eb-event-img5.png">
+                    <a href="#" class="catLink">Performance</a>
+                </div>
+                <div class="col-md-3 p-3">
+                    <img src="img/eb-event-img6.png">
+                    <a href="#" class="catLink">Screenings</a>
+                </div>
+                <div class="col-md-3 p-3">
+                    <img src="img/eb-event-img7.png">
+                    <a href="#" class="catLink">Galas</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="container-fluid miss-out-popular-section main-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 gap-4 d-flex flex-column ">
+                    <h2>Don’t Miss Out Popular Events In New Mexico </h2>
+                </div>
+                <div class="col-md-3 d-flex justify-content-around align-items-end flex-column">
+                    <div class="carousel-control-section find-free-political">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#find-free-political" data-bs-slide="prev">
+                            <i class="bi bi-arrow-left-short"></i>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#find-free-political" data-bs-slide="next">
+                            <i class="bi bi-arrow-right-short"></i>
+                        </button> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div id="find-free-political" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card" >
+                            <img class="user-id" src="img/user-img.png">
+                            <i class="bi bi-suit-heart-fill heartIcon"></i>
+                            <img src="img/image-6.png" class="card-img" alt="image-1">
+                            <div class="card-body">
+                                <h3>California Piano Concert Events 2024</h3>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <p>
+                                        Amsterdam <br>
+                                        <span>Schipol Airport</span>
+                                    </p>
+                                </div>
+                                <hr>
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <p>
+                                        17 July 2024<br>
+                                        <span>6:00 Am</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" >
+                            <img class="user-id" src="img/user-img.png">
+                            <i class="bi bi-suit-heart-fill heartIcon"></i>
+                            <img src="img/image-7.png" class="card-img" alt="image-1">
+                            <div class="card-body">
+                                <h3>California Piano Concert Events 2024</h3>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <p>
+                                        Amsterdam <br>
+                                        <span>Schipol Airport</span>
+                                    </p>
+                                </div>
+                                <hr>
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <p>
+                                        17 July 2024<br>
+                                        <span>6:00 Am</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" >
+                            <img class="user-id" src="img/user-img.png">
+                            <i class="bi bi-suit-heart-fill heartIcon"></i>
+                            <img src="img/image-8.png" class="card-img" alt="image-1">
+                            <div class="card-body">
+                            <h3>California Piano Concert Events 2024</h3>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <p>
+                                        Amsterdam <br>
+                                        <span>Schipol Airport</span>
+                                    </p>
+                                </div>
+                                <hr>
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <p>
+                                        17 July 2024<br>
+                                        <span>6:00 Am</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" >
+                            <img class="user-id" src="img/user-img.png">
+                            <i class="bi bi-suit-heart-fill heartIcon"></i>
+                            <img src="img/image-9.png" class="card-img" alt="image-1">
+                            <div class="card-body">
+                            <h3>California Piano Concert Events 2024</h3>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <p>
+                                        Amsterdam <br>
+                                        <span>Schipol Airport</span>
+                                    </p>
+                                </div>
+                                <hr>
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <p>
+                                        17 July 2024<br>
+                                        <span>6:00 Am</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" >
+                            <img class="user-id" src="img/user-img.png">
+                            <i class="bi bi-suit-heart-fill heartIcon"></i>
+                            <img src="img/image-10.png" class="card-img" alt="image-1">
+                            <div class="card-body">
+                            <h3>California Piano Concert Events 2024</h3>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <p>
+                                        Amsterdam <br>
+                                        <span>Schipol Airport</span>
+                                    </p>
+                                </div>
+                                <hr>
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <p>
+                                        17 July 2024<br>
+                                        <span>6:00 Am</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" >
+                            <img class="user-id" src="img/user-img.png">
+                            <i class="bi bi-suit-heart-fill heartIcon"></i>
+                            <img src="img/image-11.png" class="card-img" alt="image-1">
+                            <div class="card-body">
+                            <h3>California Piano Concert Events 2024</h3>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <p>
+                                        Amsterdam <br>
+                                        <span>Schipol Airport</span>
+                                    </p>
+                                </div>
+                                <hr>
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <p>
+                                        17 July 2024<br>
+                                        <span>6:00 Am</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container-fluid category-sec">
+        <div class="container">
+            <div class="category-content">
+                <h2 class="mb-4">Discover Top Categories</h2>
+                <div class="d-flex category-section">
+                    <a href="category-politics.html"><img src="img/politics.png" alt="img/politics.png"></a>
+                    <a href="category-religions.html"><img src="img/religions.png" alt="img/religions.png"></a>
+                    <a href="category-business.html"><img src="img/business.png" alt="img/business.png"></a>
+                    <a href="category-sports.html"><img src="img/sports.png" alt="img/sports.png"></a>
+                    <a href="caterory-education.html"><img src="img/education.png" alt="img/education.png"></a>
+                    <a href="category-cultures.html"><img src="img/Cultures.png" alt="img/Cultures.png"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+
+
+    <footer class="container-fluid footer-section">
+        <section class="container">
+            <div class="row top-footer">
+                <div class="col-md-3 mb-3">
+                    <h4>Plan Events</h4>
+                    <ul>
+                        <li><a href="#">Publish Your Events</a></li>
+                        <li><a href="#">Promote Your Events</a></li>
+                        <li><a href="#">Sell Tickets Online</a></li>
+                        <li><a href="#">Host Recorded Events</a></li>
+                        <li><a href="#">Pricing Plans</a></li>
+                        <li><a href="#">Event Manager App</a></li>
+                        <li><a href="#">Rank Your Event</a></li>
+                        <li><a href="#">Event Listing</a></li>
+                        <li><a href="#">Learn Event Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <h4>Find Events</h4>
+                    <ul>
+                        <li><a href="#">Events for You</a></li>
+                        <li><a href="#">Virtual Events</a></li>
+                        <li><a href="#">Get Event Updates</a></li>
+                        <li><a href="#">Event Discovery App</a></li>
+                        <li><a href="#">Write for Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <h4>Connect With Us</h4>
+                    <ul>
+                        <li><a href="#">Contact Support</a></li>
+                        <li><a href="#">Contact Sales</a></li>
+                        <li><a href="#">X</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3 d-flex justify-content-center align-items-center newsletter-col">
+                    <h2>Subscribe To Our Newsletter</h2>
+                    <form class="newsletter-form container d-flex justify-content-between align-items-center">
+                        <input type="email" placeholder="Email Here">
+                        <i class="bi bi-arrow-right-short"></i>
+                    </form>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row bottom-footer">
+                <div class="col-md-3 mb-3 footer-Logo">
+                    <img src="img/footerLogo.png">
+                </div>
+                <div class="col-md-6 mb-3 d-flex justify-content-center align-items-center">
+                    <p class="text-center creds">© 2024 City Agenda . All Rights Reserved.</p>
+                </div>
+                <div class="col-md-3 mb-3 d-flex flex-column justify-content-center footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons d-flex gap-3">
+                        <i class="bi bi-twitter"></i>
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-linkedin"></i>
+                        <i class="bi bi-tiktok"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script src="js/js.js"></script>
+    <script>
+        var carouselWidth = $('.carousel-inner')[0].scrollWidth;
+        var cardWidth = $('.carousel-item').width();
+
+        var scrollPosition = 0;
+
+        $('.carousel-control-next').on('click', function(){
+            if (scrollPosition < (carouselWidth - (cardWidth * 4))){
+                scrollPosition = scrollPosition + cardWidth;
+            $('.carousel-inner').animate({scrollLeft: scrollPosition}, 600);
+            }
+        });
+
+        $('.carousel-control-prev').on('click', function(){
+            if (scrollPosition > 0){
+                scrollPosition = scrollPosition - cardWidth ;
+            $('.carousel-inner').animate({scrollLeft: scrollPosition}, 600);
+            }
+        });
+    </script>
+
+  </body>
+</html>
