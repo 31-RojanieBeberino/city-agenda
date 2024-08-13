@@ -750,6 +750,7 @@ input, select, textarea, ul, li, button,
     display: flex;
     gap:10px;
     width: 75%;
+    flex-direction: column;
 }
 
 .list-item-details h5{
