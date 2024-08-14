@@ -125,10 +125,11 @@ input, select, textarea, ul, li, button,
     position: absolute;
     top:0;
     left: 0;
-    background-color: #4000516e;
+    background-color: #400051;
     width: 100%;
     height: 100%;
     z-index: 0;
+    opacity: .5;
 }
 
 .banner div{
@@ -882,21 +883,85 @@ input, select, textarea, ul, li, button,
 }
 
 
+.blog-inner{
+    background-image: url('../img/blogImg.png');
+    padding:70px 20px;
+}
+
+.blog-inner h3{
+    text-align: left!important;
+}
 
 
 
+.blog-inner ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap:15px;
+    margin: 0px!important;
+}
 
 
+.blog-inner ul li a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 14px!important;
+}
+
+.blog-inner ul li{
+    position: relative;
+}
+
+.blog-inner ul li:first-child::after{
+    display: none;
+}
 
 
+.blog-inner ul li::after {
+    content: '|';
+    color:#fff;
+    position: absolute;
+    right:10px;
+    top:-1px;
+    height: 2px;
+    width: 100%;
+}
 
 
+.blog-inner-post{
+    margin: 0px;
+}
+
+.blog-inner-section{
+    background-image: url('../img/blog-inner-sec-bg.png');
+    padding:50px 20px 0px;
+}
+
+.blog-inner-section::before{
+    opacity: .98;
+    background-color: #741774;
+}
 
 
+.blog-inner-section img{
+    width: 100%;
+}
 
 
+.blog-inner-section .testimonial-sec p{
+    font-size: 40px;
+    font-weight: 600;
+    color:#fff;
+    line-height: 1.3em;
+}
 
-
+.blog-inner-section .testimonial-sec h5{
+    font-size: 20px;
+    font-weight: 400;
+    color:#fff;
+    line-height: 1.3em;
+}
 
 
 
