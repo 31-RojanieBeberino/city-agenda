@@ -829,6 +829,8 @@ input, select, textarea, ul, li, button,
 
 
 .post-details{
+    display: flex;
+    flex-direction: column;
     justify-content: space-between!important;
 }
 
