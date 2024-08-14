@@ -932,7 +932,8 @@ input, select, textarea, ul, li, button,
 
 
 .blog-inner-post{
-    margin: 0px;
+    margin-top: 0px;
+    margin-bottom: 50px;
 }
 
 .blog-inner-section{
