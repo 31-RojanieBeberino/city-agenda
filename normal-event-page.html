@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="en">
+  
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>City Agenda | Normal Event</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+
+
+
+    <style>
+
+        i.bi.bi-arrow-left-short, i.bi.bi-arrow-right-short{
+            font-size: 50px;
+            height: auto!important;
+            width: auto!important;
+            vertical-align: -10px!important;
+        }
+
+        .carousel-control-section{
+            position: relative;
+            width: 170px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .card-bottom div p {
+            margin: 0px!important;
+        }
+
+        .card-bottom div i{
+            height: 1.8em!important;
+        }
+
+        .carousel-control-next, .carousel-control-prev{
+            background-color: #741774;
+            height: 70px;
+            width: 70px;
+            position: relative!important;
+            border-radius: 50px;
+        }
+
+        .politics-grid-section .carousel{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+
+        @media screen and (min-width:576px) {
+            .carousel-inner{
+                display:flex;
+            }
+            
+            .carousel-item{
+                display: block;
+                margin-right:0;
+                flex: 0 0 calc(100%/3);
+            }
+        }
+
+
+        .card{
+           box-shadow: 0px 0px 5px #0000003b;
+           border: 0px;
+           margin: 0 10px;
+           width: 95%;
+        }
+
+        .card-img{
+            width: 100%;
+        }
+
+
+    </style>
+
+
+
+
+</head>
+  
+<body>
+    <nav class="navbar navbar-expand-lg main-nav">
+        <div class="container justify-content-center">
+           <div class="row container-fluid d-flex justify-content-end gap-0">
+                <div class="col-md-5 d-flex align-items-center">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/Logo.png">
+                    </a>
+                    <form class="d-flex align-items-center gap-1 nav-form-search p-2 pe-3 ps-3" role="search">
+                        <i class="bi bi-search"></i>
+                        <input class="form-control me-2" type="search" placeholder="Search City Agenda" aria-label="Search City Agenda">
+                    </form>
+                </div>
+                <button class="navbar-toggler p-2 mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="col-md-7 justify-content-end collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="d-flex gap-3 p-0 justify-content-end align-items-center nav-control">
+                        <button class="new-event">Create New Event</button>
+                        <div class="nav-action d-flex gap-3 align-items-center">
+                            <i class="bi bi-people-fill"></i>
+                            <i class="bi bi-grid-3x3-gap-fill"></i>
+                            <hr>
+                            <i class="bi bi-person-fill"></i>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </nav>
+
+
+
+    <section class="container-fluid normal-event-section">
+        <div class="container event-banner">
+            <div class="row">
+                <div class="col-md-6 event-countdown">
+                    <div class="countdown">00 | 00 | 00 | 00</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="container-fluid inner-page event-sec">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-8 d-flex flex-column gap-3">
+                    <h1>Football League™ 2024 </h1>
+                    <h5>The Largest Football League Series In The World.</h5>
+                    
+                    <div class="event-user-sec">
+                        <div class="user-profile">
+                            <img src="img/event-user-prof.png">
+                            <ul>
+                                <li><a href="#">By Sports Soy</a></li>
+                                <li><a href="#"> 26.6K Followers</a></li>
+                            </ul>
+                        </div>
+                        <button class="main-btn">Explore</button>
+                    </div>
+
+                    <div class="date-location">
+                        <div class="dl-sec">
+                            <h3>Date And Time</h3>
+                            <p><i class="bi bi-calendar-month"></i>Friday, August 9 · 12 - 5Am PST</p>
+                        </div>
+                        <div class="dl-sec">
+                            <h3>Location</h3>
+                            <p><i class="bi bi-geo-alt-fill"></i>Albuquerque, New Mexico</p>
+                        </div>
+                    </div>
+
+                    <h2>About This Event</h2>
+                    <h4>Welcome To Football League Series In The World.</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed ullamcorper morbi tincidunt ornare. Nunc eget lorem dolor sed viverra ipsum nunc aliquet. Diam sollicitudin tempor id eu nisl nunc mi ipsum faucibus. Fermentum posuere urna nec tincidunt praesent semper. Tortor condimentum lacinia quis vel eros donec ac odio tempor. Cras sed felis eget velit aliquet sagittis id. At in tellus integer feugiat scelerisque varius morbi. Massa sapien faucibus et molestie ac feugiat sed lectus vestibulum. Ut enim blandit volutpat maecenas volutpat blandit aliquam. Pulvinar mattis nunc sed blandit libero volutpat sed cras. Eu tincidunt tortor aliquam nulla facilisi. Est placerat in egestas erat. Molestie nunc non blandit massa enim nec. Pellentesque adipiscing commodo elit at imperdiet dui. Vel fringilla est ullamcorper eget nulla. Molestie ac feugiat sed lectus. Nunc non blandit massa enim nec dui nunc mattis enim.</p>
+                    <img src="img/event-img1.png">
+                    <h3>Refund Policy </h3>
+                    <ul class="refund-list">
+                        <li><img src="img/birdImg.png">If event organizer cancels the event for whatever reason all users who bought tickets will be refunded. </li>
+                        <li><img src="img/birdImg.png">You can cancel any time at least 24 hours before starting the event date and time.</li>    
+                    </ul>
+                    <h2>Tags</h2>
+                    <div class="tag-section">
+                        <button class="main-btn tag-items">Online Events</button>
+                        <button class="main-btn tag-items">Things To Do Online</button>
+                        <button class="main-btn tag-items">Online Conferences</button>
+                        <button class="main-btn tag-items">Online Science & Tech Conferences</button>
+                        <button class="main-btn tag-items">#Conference</button>
+                        <button class="main-btn tag-items">#Upskill</button>
+                        <button class="main-btn tag-items">#Product_Manager</button>
+                        <button class="main-btn tag-items">#Product_Management</button>
+                        <button class="main-btn tag-items">#Break_Into_Product</button>
+                        <button class="main-btn tag-items">#Breakintoproduct</button>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex flex-column gap-5 ps-5">
+                    <div class="icon-controls">
+                        <i class="bi bi-suit-heart-fill" data-bs-toggle="modal" data-bs-target="#heartModal"></i>
+                        <i class="bi bi-upload" data-bs-toggle="modal" data-bs-target="#emailModal"></i>
+                    </div>
+
+                    <div class="modal fade" id="heartModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content d-flex flex-column gap-2 align-items-center p-5">
+                                <h4>Share With Friends</h4>
+                                <hr>
+                                <div class="social-share">
+                                    <i class="bi bi-twitter"></i>
+                                    <i class="bi bi-facebook"></i>
+                                    <i class="bi bi-instagram"></i>
+                                    <i class="bi bi-linkedin"></i>
+                                    <i class="bi bi-tiktok"></i>
+                                </div>
+                                <form class="copy-link">
+                                    <label>Eventurl</label>
+                                    <input type="text" value="/event-w-payment.html">
+                                    <i class="bi bi-clipboard"></i>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content d-flex flex-column gap-2 align-items-center p-5">
+                                <h4>Get Updated By Email</h4>
+                                <hr>
+                                <form class="form-email">
+                                    <input type="email" placeholder="Email Address">
+                                    <input type="submit" value="Submit">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="free-tickets">
+                        <h3>Free</h3>
+                        <button class="main-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Get tickets</button>
+                    </div>
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="row modal-details">
+                                <div class="col-md-7 d-flex flex-column gap-2 align-items-center p-5">
+                                    <h4>Checkout</h4>
+                                    <p>Time Left 17:41</p>
+                                    <hr>
+                                    <div class="not-you-sec">
+                                        <div>Logged In As <b><a href="#">Johndoe@Gmail.Com.</a> Not You?</b></div>
+                                        <b>Required*</b>
+                                    </div>
+                                    <form>
+                                        <div class="fullname">
+                                            <label>
+                                                First Name*
+                                                <input type="text" name="no-payment-firstName">
+                                            </label>
+                                            <label>
+                                                Last Name*
+                                                <input type="text" name="no-payment-lastName">
+                                            </label>
+                                        </div>
+                                        <label class="email-input">
+                                            Email Address*
+                                            <input type="email" name="no-payment-email">
+                                        </label>
+                                        <label class="checkbox-input">
+                                            <input type="checkbox">
+                                            Keep Me Updated On More Events And News From This Event Organizer.
+                                        </label>
+                                        <label class="checkbox-input">
+                                            <input type="checkbox">
+                                            Send Me Emails About The Best Events Happening Nearby Or Online.
+                                        </label>
+                                        <p>By Selecting Register, I Agree To The CityAgenda Terms Of Services</p>
+                                    </form>
+                                </div>
+                                <div class="col-md-5 order-col">
+                                    <img src="img/modal-img1.png">
+                                    <div class="order-sum">
+                                        <div class="oder-details">
+                                            <h4>Order Summary</h4>
+                                            <p>Friday, December 27 · 12 - 9Pm PST</p>
+                                            <hr>
+                                            <div class="sum-detail">
+                                                <p>1 X General Admission</p>
+                                                <p><b>₱0.00</b></p>
+                                            </div>
+                                            <hr>
+                                            <p>Delivery</p>
+                                            <div class="sum-detail">
+                                                <p>1 X Eticket</p>
+                                                <p><b>₱0.00</b></p>
+                                            </div>
+                                        </div>
+                                        <div class="oder-total">
+                                            <div class="sum-total">
+                                                <p><b>1 X Eticket</b></p>
+                                                <h5><b>₱0.00</b></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h1>Agenda</h1>
+            <div class="agenda-sec mt-4">
+                <div class="agend-date">
+                    <h4>Friday, August 9 12 - 5Am PST</h4>
+                </div>
+                <div class="agenda-content">
+                    <div class="agenda-details">
+                        <h3>Football League™ 2024 </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed ullamcorper morbi tincidunt ornare. Nunc eget lorem dolor sed viverra ipsum nunc aliquet. </p>
+                    </div>
+                    <div class="agend-person">
+                        <img src="img/img-user.png">
+                        <img src="img/img-user1.png">
+                    </div>
+                </div>
+            </div>
+            <div class="agenda-sec mt-5">
+                <div class="agend-date">
+                    <h4>Friday, August 9 12 - 5Am PST</h4>
+                </div>
+                <div class="agenda-content">
+                    <div class="agenda-details">
+                        <h3>Football League™ 2024 </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed ullamcorper morbi tincidunt ornare. Nunc eget lorem dolor sed viverra ipsum nunc aliquet. </p>
+                    </div>
+                    <div class="agend-person">
+                        <img src="img/img-user.png">
+                        <img src="img/img-user1.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="container-fluid banner sponsors-section">
+        <div class="container">
+            <h2>Sponsors And Partners</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed ullamcorper morbi tincidunt ornare. Nunc eget lorem dolor sed viverra ipsum nunc aliquet. </p>
+            <div class="sponsors-logos">
+                <img src="img/logo1.png">
+                <img src="img/logo2.png">
+                <img src="img/logo3.png">
+                <img src="img/logo4.png">
+                <img src="img/logo5.png">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="container-fluid find-free-political-section main-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 gap-4 d-flex flex-column ">
+                    <h2>Find Free Political Events In New Mexico</h2>
+                </div>
+                <div class="col-md-3 d-flex justify-content-around align-items-end flex-column">
+                    <div class="carousel-control-section find-free-political">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#find-free-political" data-bs-slide="prev">
+                            <i class="bi bi-arrow-left-short"></i>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#find-free-political" data-bs-slide="next">
+                            <i class="bi bi-arrow-right-short"></i>
+                        </button> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div id="find-free-political" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card" >
+                            <img class="user-id" src="img/user-img.png">
+                            <i class="bi bi-suit-heart-fill heartIcon"></i>
+                            <img src="img/image-6.png" class="card-img" alt="image-1">
+                            <div class="card-body">
+                                <h3>California Piano Concert Events 2024</h3>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <p>
+                                        Amsterdam <br>
+                                        <span>Schipol Airport</span>
+                                    </p>
+                                </div>
+                                <hr>
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <p>
+                                        17 July 2024<br>
+                                        <span>6:00 Am</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" >
+                            <img class="user-id" src="img/user-img.png">
+                            <i class="bi bi-suit-heart-fill heartIcon"></i>
+                            <img src="img/image-7.png" class="card-img" alt="image-1">
+                            <div class="card-body">
+                                <h3>California Piano Concert Events 2024</h3>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <p>
+                                        Amsterdam <br>
+                                        <span>Schipol Airport</span>
+                                    </p>
+                                </div>
+                                <hr>
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <p>
+                                        17 July 2024<br>
+                                        <span>6:00 Am</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" >
+                            <img class="user-id" src="img/user-img.png">
+                            <i class="bi bi-suit-heart-fill heartIcon"></i>
+                            <img src="img/image-8.png" class="card-img" alt="image-1">
+                            <div class="card-body">
+                            <h3>California Piano Concert Events 2024</h3>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <p>
+                                        Amsterdam <br>
+                                        <span>Schipol Airport</span>
+                                    </p>
+                                </div>
+                                <hr>
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <p>
+                                        17 July 2024<br>
+                                        <span>6:00 Am</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" >
+                            <img class="user-id" src="img/user-img.png">
+                            <i class="bi bi-suit-heart-fill heartIcon"></i>
+                            <img src="img/image-9.png" class="card-img" alt="image-1">
+                            <div class="card-body">
+                            <h3>California Piano Concert Events 2024</h3>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <p>
+                                        Amsterdam <br>
+                                        <span>Schipol Airport</span>
+                                    </p>
+                                </div>
+                                <hr>
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <p>
+                                        17 July 2024<br>
+                                        <span>6:00 Am</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" >
+                            <img class="user-id" src="img/user-img.png">
+                            <i class="bi bi-suit-heart-fill heartIcon"></i>
+                            <img src="img/image-10.png" class="card-img" alt="image-1">
+                            <div class="card-body">
+                            <h3>California Piano Concert Events 2024</h3>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <p>
+                                        Amsterdam <br>
+                                        <span>Schipol Airport</span>
+                                    </p>
+                                </div>
+                                <hr>
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <p>
+                                        17 July 2024<br>
+                                        <span>6:00 Am</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card" >
+                            <img class="user-id" src="img/user-img.png">
+                            <i class="bi bi-suit-heart-fill heartIcon"></i>
+                            <img src="img/image-11.png" class="card-img" alt="image-1">
+                            <div class="card-body">
+                            <h3>California Piano Concert Events 2024</h3>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <p>
+                                        Amsterdam <br>
+                                        <span>Schipol Airport</span>
+                                    </p>
+                                </div>
+                                <hr>
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <p>
+                                        17 July 2024<br>
+                                        <span>6:00 Am</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    
+
+    <footer class="container-fluid footer-section">
+        <section class="container">
+            <div class="row top-footer">
+                <div class="col-md-3 mb-3">
+                    <h4>Plan Events</h4>
+                    <ul>
+                        <li><a href="#">Publish Your Events</a></li>
+                        <li><a href="#">Promote Your Events</a></li>
+                        <li><a href="#">Sell Tickets Online</a></li>
+                        <li><a href="#">Host Recorded Events</a></li>
+                        <li><a href="#">Pricing Plans</a></li>
+                        <li><a href="#">Event Manager App</a></li>
+                        <li><a href="#">Rank Your Event</a></li>
+                        <li><a href="#">Event Listing</a></li>
+                        <li><a href="#">Learn Event Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <h4>Find Events</h4>
+                    <ul>
+                        <li><a href="#">Events for You</a></li>
+                        <li><a href="#">Virtual Events</a></li>
+                        <li><a href="#">Get Event Updates</a></li>
+                        <li><a href="#">Event Discovery App</a></li>
+                        <li><a href="#">Write for Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <h4>Connect With Us</h4>
+                    <ul>
+                        <li><a href="#">Contact Support</a></li>
+                        <li><a href="#">Contact Sales</a></li>
+                        <li><a href="#">X</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3 d-flex justify-content-center align-items-center newsletter-col">
+                    <h2>Subscribe To Our Newsletter</h2>
+                    <form class="newsletter-form container d-flex justify-content-between align-items-center">
+                        <input type="email" placeholder="Email Here">
+                        <i class="bi bi-arrow-right-short"></i>
+                    </form>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row bottom-footer">
+                <div class="col-md-3 mb-3 footer-Logo">
+                    <img src="img/footerLogo.png">
+                </div>
+                <div class="col-md-6 mb-3 d-flex justify-content-center align-items-center">
+                    <p class="text-center creds">© 2024 City Agenda . All Rights Reserved.</p>
+                </div>
+                <div class="col-md-3 mb-3 d-flex flex-column justify-content-center footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons d-flex gap-3">
+                        <i class="bi bi-twitter"></i>
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-linkedin"></i>
+                        <i class="bi bi-tiktok"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/js.js"></script>
+
+</body>
+</html>
