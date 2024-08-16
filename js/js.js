@@ -2,48 +2,6 @@
 
 
 
-// Countdown Event
-
-let launchDate = new Date("August 30, 2024 12:00:00").getTime();
-
-
-let timer = setInterval(tick, 1000);
-
-function tick () {
-
-let now = new Date().getTime();
-
-let t = launchDate - now;
-
-if (t > 0) {
-    
-    let days = Math.floor(t / (1000 * 60 * 60 * 24));
-    
-    if (days < 10) { days = "0" + days; }
-    
-    
-    let hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    if (hours < 10) { hours = "0" + hours; }
-
-   
-    let mins = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
-    if (mins < 10) { mins = "0" + mins; }
-
-    
-    let secs = Math.floor((t % (1000 * 60)) / 1000);
-    if (secs < 10) { secs = "0" + secs; }
-
-   
-    let time = `
-        <div class="countLabel"> <h3>${days}</h3> <span>Days</span></div> <hr>
-        <div class="countLabel"><h3>${hours}</h3> <span>Hours</span></div> <hr> 
-        <div class="countLabel"><h3>${mins}</h3> <span>Minutes</span></div> <hr> 
-        <div class="countLabel"><h3>${secs}</h3> <span>Seconds</span></div>
-    `;
-
-    document.querySelector('.countdown').innerHTML = time;
-    }
-}
 
 
 
@@ -74,6 +32,9 @@ function decrementCounter(index) {
 
 
 $(document).ready(function(){
+
+
+
     var carouselWidth = $('.carousel-inner')[0].scrollWidth;
     var cardWidth = $('.carousel-item').width();
 
@@ -116,4 +77,21 @@ $(document).ready(function(){
         }
         reader.readAsDataURL(this.files[0]);
     });
+
+
+
+
+
+
+    // Date Select Type Evetn
+
+    // $('.date-button').click(function() {
+    //     alert('Hey!');
+    //     // Remove active class from all buttons
+    //     // $('.date-button').removeClass('active-button');
+
+    //     // Add active class to the clicked button
+    //     $('.date-button').addClass('active-button');
+    // });
+
 });

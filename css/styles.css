@@ -867,6 +867,12 @@ input, select, textarea, ul, li, button,
 .accordion-button{
     background-color:#F9F9F9!important;
     padding: 20px 30px!important;
+    font-family: 'General Sans';
+}
+
+
+.accordion-body{
+    font-family: 'General Sans';
 }
 
 
@@ -1929,7 +1935,7 @@ form.form-email input[type="submit"]{
 .progress-step .line {
     position: absolute;
     width: 80%;
-    right: -150px;
+    right: -170px;
     bottom:15px;
     height: 2px;
     background-color: #800080;
@@ -1938,8 +1944,11 @@ form.form-email input[type="submit"]{
 
 .progress-step.active + .progress-step .line {
     background-color: #ccc;
-}
+}   
 
+.progress-step.active + .progress-step.active .line {
+    background-color: #800080;
+}   
 
 .progress-step p {
     font-weight: 600;
@@ -2027,7 +2036,7 @@ form.form-email input[type="submit"]{
 }
 
 
-.event-input-detials-section label{
+.event-input-detials-section label, .event-date-section{
     display: flex;
     flex-direction: column;
     gap:20px;
@@ -2038,32 +2047,728 @@ form.form-email input[type="submit"]{
     font-family: 'General Sans';
 }
 
-.event-input-detials-section label .dropdown{
+.event-input-detials-section label .dropdown,
+.event-date-section .dropdown{
     width: 100%;
 }
 
-.event-input-detials-section label .dropdown .dropdown-toggle{
+.event-input-detials-section label .dropdown .dropdown-toggle,
+.event-date-section .dropdown .dropdown-toggle{
     display: flex;
     align-items: center;
     font-family: 'General Sans';
 }
 
-.event-input-detials-section label .dropdown-toggle::after{
+.event-input-detials-section label .dropdown-toggle::after,
+.event-date-section .dropdown-toggle::after{
     position: absolute;
     right: 20px;
     font-size: 25px;
 }
 
-.event-input-detials-section label p {
+.event-input-detials-section label p,
+.event-date-section p {
     font-size: 18px;
     margin: 0px;
     font-weight: 400;
 }
 
-.event-input-detials-section label .event-name{
+.event-input-detials-section label .event-name,
+.event-date-section .event-name{
     text-align: left;
 }
 
-.event-input-detials-section label .card{
+.event-input-detials-section label .card,
+.event-date-section .card{
     width: 100%;
+}
+
+
+
+/* .active-button {
+    background-color: #741774 !important;
+    color: white !important;
+} */
+
+.group-toggle button{
+    transition: .4s;
+}
+
+.group-toggle button:hover{
+    background-color: #741774;
+    color: white;
+}
+
+
+.event-input-detials-section .event-date-section .group-toggle{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+}
+
+
+.date-inputs-fields{
+    display: flex;
+    gap:20px;
+    width: 100%;
+}
+
+.date-fields-item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:10px;
+    width: 100%;
+}
+
+
+.date-fields-item p{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.input-field{
+    display: flex;
+    gap:20px;
+    align-items: center;
+    width: 100%;
+}
+
+.input-field input{
+    font-size: 17px;
+    width: 100%;
+    padding:15px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #00000033;
+    border: 0;
+    outline: none;
+}
+
+
+
+.location-inputs .input-field{
+    flex-direction: column;
+    gap:15px;
+}
+
+
+.text-summary{
+    font-size: 17px;
+    font-weight: 600;
+    padding-bottom:10px;
+}
+
+.uploadButton{
+    display: flex;
+    gap:20px;
+    justify-content: center;
+}
+
+.uploadBtn{
+    display:flex;
+    gap:15px;
+    align-items: center;
+    background-color: #fff;
+    color:#741774;
+    box-shadow: 0px 0px 5px #00000036;
+    transition: .4s;
+}
+
+.uploadBtn:hover{
+    background-color: #741774;
+    color:#fff;
+}
+
+.uploadBtn i{
+    font-size: 20px;
+}
+
+
+.event-content-field-item{
+    width: 100%;
+}
+
+.toggelHeader{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    align-items: center;
+    margin-bottom:20px;
+    padding:10px;
+    border-radius: 7px;
+    background-color: #fff;
+    align-items: center;
+}
+
+.toggelHeader h3{
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    gap:15px;
+    align-items: center;
+    margin:0;
+}
+
+.toggelHeader h3 i{
+    background-color: #EEEEEE;
+    padding:5px;
+    height: 40px;
+    width: 45px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.toggelHeader .main-btn{
+    width:130px;
+    padding:15px 20px;
+    color:#741774;
+    background-color: #EEEEEE;
+}
+
+.event-content-field-item .collapse{
+    padding:0;
+    margin: 0;
+}
+
+
+
+.form-section {
+    margin-bottom: 20px;
+}
+
+
+.add-slot-btn {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 30px;
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+.icon {
+    margin-right: 5px;
+}
+.agenda-title {
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 15px;
+}
+.agenda-title:focus {
+    border-bottom: 2px solid #6c63ff;
+    box-shadow: none;
+}
+
+
+.event-content-field-item .card-body{
+    background-color: transparent;
+    border: 0;
+    padding:0;
+}
+
+.event-content-field-item .card-body .nav-tabs{
+    border: 0;
+}
+
+.event-content-field-item .card-body .nav-link{
+    font-size: 17px;
+    font-weight: 500;
+    transition: .4s;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 2px solid #868686;
+    background-color: transparent;
+    color:#868686;
+
+}
+
+.event-content-field-item .card-body .nav-link.active{
+    background-color: transparent;
+    border: 0;
+    color:#741774;
+    border-bottom: 2px solid #741774;
+    border-radius: 0px;
+}
+
+.event-content-field-item .card-body .nav-link:hover{
+    background-color: transparent;
+    border: 0;
+    color:#741774;
+    border-bottom: 2px solid #741774;
+    border-radius: 0px;
+}
+
+#agendaForm{
+    margin-top:30px;
+    position: relative;
+}
+
+.event-content-field-item .card-body  .form-section .agenda-title{
+    padding:15px!important;
+    border-radius: 5px!important;
+    font-size: 17px;
+    width: 100%;
+    border-bottom: 0;
+    outline: none;
+}
+
+.event-content-field-item .card-body  .form-section label{
+    font-size: 15px;
+    font-weight: 600;
+    color:#000;
+    text-align: left;
+    align-items: flex-start;
+}
+
+.event-content-field-item .card-body  .form-section input{
+    font-size: 17px;
+    width: 100%;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #00000033;
+    border: 0;
+    outline: none;
+}
+
+.event-content-field-item .card-body .buttonLink a{
+    font-size: 14px;
+    font-weight: 500;
+    transition: .4s;
+    text-decoration: none;
+    background-color: transparent;
+    color:#000;
+}
+
+.event-content-field-item .card-body .form-section .add-slot-btn{
+    font-size: 15px;
+    font-weight: 500;
+    color:#000;
+}
+
+
+.img-upload-btn {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.img-upload-btn input#file-upload {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.img-upload-btn .file-upload-btn {
+    cursor: pointer;
+    background-color: #fff;
+    color: #7b1fa2;
+    padding: 15px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border: 0;
+    font-size: 14px;
+    box-shadow: 0px 0px 5px #00000046;
+    width: 100%;
+}
+
+.img-upload-btn .file-upload-btn i {
+    width: 18px;
+    height: 18px;
+}
+
+.img-upload-btn .file-upload-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.form-section .add-more-btn,
+.form-section .add-more-btn-sap,
+.remove-btn,
+.remove-btn-sap{
+    width: 100%;
+    color:#741774;
+    font-size: 15px;
+    padding:16px 10px;
+    gap:5px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #00000046;
+}
+
+.faq-add-more,
+.faq-delete-btn{
+    width: 100%;
+    color:#000;
+    font-size:15px;
+    padding:15px;
+    gap:5px;
+    background-color: #DCDCDC;
+    border-radius: 50px;
+    box-shadow: 0px 0px 5px #00000046;
+}
+
+.form-section h5{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.event-content-field-item .card-body h3{
+    font-size: 18px;
+}
+
+#agendaForm .addSlot{
+    position: relative;
+}
+
+#agendaForm .addSlot .closeBtn{
+    position: absolute;
+    right:10px;
+    padding: 5px;
+    top:-30px;
+    font-size: 11px;
+    border-radius: 50px;
+    border: 1px solid #0000005d;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+
+#agendaForm .addSlot .closeBtn:hover{
+    color:#fff;
+    border: 1px solid #741774;
+    background-color: #741774;
+}
+
+
+.create-submit-btn{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 250px;
+    margin-top: 50px;
+}
+
+.submit-btn-arrow{
+    position: absolute;
+    right: 15px;
+    font-size: 20px!important;
+}
+
+
+
+.contact-content{
+    display: flex;
+    gap:20px;
+    background-color: #F5F5F5;
+    border-radius:10px;
+}
+
+.contact-form-col {
+    width:50%;
+    padding:60px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.contact-form-col h2{
+    font-size: 50px;
+    font-weight: 700;
+    color:#000;
+}
+
+
+.contact-form-col p{
+    font-size: 18px;
+    font-weight: 400;
+    color:#000;
+    text-align: left;
+}
+
+.contact-form-col form{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    width:100%;
+}
+
+
+.contact-form-col form input[type="text"],
+.contact-form-col form input[type="email"],
+.contact-form-col form .dropdown-toggle,
+.contact-form-col form textarea{
+    width: 100%;
+    padding:15px;
+    border: 5px;
+    font-size: 15px;
+    box-shadow: 0px 0px 5px #0000002a;
+    background-color: #F5F5F5;
+    border-radius: 5px;
+    color:#747474;
+    outline: none;
+}
+
+.contact-form-col form .dropdown-toggle{
+    display: flex;
+    text-align: left;
+    align-items: center;
+    font-family: 'General Sans';
+}
+
+.contact-form-col form .dropdown-toggle::after{
+    right:20px!important;
+    position: absolute;
+}
+
+.submitBottom{
+    display: flex;
+    justify-content: end;
+}
+
+.submitBottom .contact-submit{
+    background-color: #741774;
+    color:#fff;
+}
+
+.contact-img-sec{
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.contact-img-sec img{
+    width: 100%;
+    height: 650px;
+    object-fit: contain;
+}
+
+.contact-banner{
+    padding: 50px 20px;
+}
+
+
+.contact-section{
+    background-color: #F9F9F9;
+    margin: 100px 0px;
+}
+
+
+.contact-sec-col img{
+    width: 100%;
+    object-fit: contain;
+    margin-top: -50px;
+    margin-bottom: -50px;
+}
+
+
+.contact-section h3{
+    font-size: 45px;
+    font-weight: 600;
+    color:#000;
+}
+
+.contact-section h6{
+    font-size: 25px;
+    font-weight: 500;
+    color:#414141;
+}
+
+
+.contact-section p{
+    font-size: 18px;
+    font-weight: 400;
+    color:#000;
+}
+
+
+.privacy-policy-section{
+    padding:60px 20px;
+}
+
+.privacy-policy-section h4{
+    font-weight: 40px;
+    font-weight: 600;
+    color:#000;
+    margin-bottom: 0px;
+}
+
+
+.privacy-policy-section p{
+    font-weight: 17px;
+    font-weight: 400;
+    color:#000;
+}
+
+.progress-header{
+    padding:50px 20px;
+}
+
+
+
+.ticket-publish{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+
+.ticket-publish h2{
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    color:#000;
+    margin-bottom: 0px;
+}
+
+.ticket-publish h5{
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    color:#000;
+    margin-bottom: 0px;
+}
+
+
+.ticket-card-sec{
+    padding:25px;
+    background-color: #F9F9F9;
+    display: flex;
+    gap:40px;
+    border-radius: 20px;
+    align-items: center;
+}
+
+
+.ticket-card-sec img{
+    width: 40%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.ticket-details{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.ticket-details h3{
+    font-size: 40px;
+    font-weight: 700;
+    color:#000;
+    margin: 0;
+}
+
+.ticket-details h6{
+    font-size: 25px;
+    font-weight: 700;
+    color:#000;
+}
+
+
+.ticket-price {
+    display: flex;
+    gap:20px;
+    list-style: none;
+    padding: 0;
+}
+
+.ticket-price li{
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
+
+.ticket-price li p{
+    margin: 0;
+    font-size: 14px;
+}
+
+.ticket-price li img{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+
+.publish-settings{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    margin-top: 50px;
+}
+
+.publish-settings h3{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.publish-settings h4{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+
+.checkbox-label h6{
+    font-size: 20px;
+    font-weight: 500;
+    color:#000;
+}
+
+.checkbox-label p{
+    font-size: 15px;
+    font-weight: 400;
+    color:#000;
+    margin: 0px;
+}
+
+.checkbox-label p b{
+    margin: 0px;
+}
+
+.publish-settings label{
+    display: flex;
+    gap:20px;
+    align-items: flex-start;
+}
+
+.publish-settings label input[type="radio"]{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+}
+
+.publish-settings label input[type="checkbox"]{
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+}
+
+.publish-form{
+    padding: 60px 20px;
+}
+
+.note-text{
+    font-style: italic;
 }
