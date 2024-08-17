@@ -19,33 +19,39 @@
 
 
 <body>
-    <nav class="navbar navbar-expand-lg main-nav">
-        <div class="container justify-content-center">
-           <div class="row container-fluid d-flex justify-content-end gap-0">
-                <div class="col-md-5 d-flex align-items-center">
+    <nav class="navbar navbar-expand-lg main-nav container-fluid">
+        <div class="container w-100 justify-content-center">
+            <div class="row w-100 align-items-center justify-content-end justify-content-sm-between">
+                <div class="col-md-7 col-sm-10 d-flex align-items-center justify-content-between justify-content-sm-start">
+                    <!-- Logo -->
                     <a class="navbar-brand" href="#">
-                        <img src="img/Logo.png">
+                        <img src="img/Logo.png" alt="Logo">
                     </a>
+                    <!-- Search Form -->
                     <form class="d-flex align-items-center gap-1 nav-form-search p-2 pe-3 ps-3" role="search">
                         <i class="bi bi-search"></i>
                         <input class="form-control me-2" type="search" placeholder="Search City Agenda" aria-label="Search City Agenda">
                     </form>
                 </div>
-                <button class="navbar-toggler p-2 mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="col-md-7 justify-content-end collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="d-flex gap-3 p-0 justify-content-end align-items-center nav-control">
-                        <button class="new-event">Create New Event</button>
+                <!-- Toggler Button for Mobile -->
+                <div class="col-2 d-lg-none d-flex justify-content-end mt-0 mt-lg-0">
+                    <button class="navbar-toggler p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <!-- Navbar Links -->
+                <div class="col-md-5 col-sm-12 collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="d-flex gap-3 align-items-center nav-control justify-content-lg-end justify-content-between pt-lg-0 pb-lg-0 pt-sm-3 pb-sm-3 p-0">
+                        <a href="create-new-event-page.html"><button class="new-event" >Create New Event</button></a>
                         <div class="nav-action d-flex gap-3 align-items-center">
                             <i class="bi bi-people-fill"></i>
                             <i class="bi bi-grid-3x3-gap-fill"></i>
-                            <hr>
+                            <hr class="d-none d-sm-block">
                             <i class="bi bi-person-fill"></i>
                         </div>
                     </div>
                 </div>
-           </div>
+            </div>
         </div>
     </nav>
 
@@ -65,7 +71,7 @@
     <section class="container-fluid inner-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 d-flex flex-column gap-5">
+                <div class="col-lg-8 col-md-12 d-flex flex-column gap-5">
                     <div class="blog-item">
                         <img src="img/blog-img1.png">
                         <h3>Why Hiring A Sourcing Agency?</h3>
@@ -119,7 +125,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-md-4 justify-content-start ps-5 side-bar">
+                <div class="col-lg-4 col-md-12 justify-content-start ps-0 ps-lg-5 side-bar">
                     <form class="mb-5">
                         <h4>Search Blog</h4>
                         
@@ -244,7 +250,7 @@
         <div class="container">
             <h3>Related Post</h3>
             <div class="row mt-5">
-                <div class="col-md-4 d-flex gap-3 flex-column related-card">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mb-lg-0 d-flex gap-3 flex-column related-card">
                     <img src="img/related-img.png">
                     <h5>Best Buy Is Laying Off More Employees As It Reckons With Falling Sales</h5>
                     <ul>
@@ -256,7 +262,7 @@
                         Continue Reading
                     </button>
                 </div>
-                <div class="col-md-4 d-flex gap-3 flex-column related-card">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mb-lg-0 d-flex gap-3 flex-column related-card">
                     <img src="img/related-img1.png">
                     <h5>Best Buy Is Laying Off More Employees As It Reckons With Falling Sales</h5>
                     <ul>
@@ -268,7 +274,7 @@
                         Continue Reading
                     </button>
                 </div>
-                <div class="col-md-4 d-flex gap-3 flex-column related-card">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mb-lg-0 d-flex gap-3 flex-column related-card">
                     <img src="img/related-img2.png">
                     <h5>Best Buy Is Laying Off More Employees As It Reckons With Falling Sales</h5>
                     <ul>
@@ -286,10 +292,12 @@
     
 
 
+
+
     <footer class="container-fluid footer-section">
         <section class="container">
             <div class="row top-footer">
-                <div class="col-md-3 mb-3">
+                <div class="col-lg-3 col-md-4 col-sm-12 mb-3">
                     <h4>Plan Events</h4>
                     <ul>
                         <li><a href="#">Publish Your Events</a></li>
@@ -303,7 +311,7 @@
                         <li><a href="#">Learn Event Marketing</a></li>
                     </ul>
                 </div>
-                <div class="col-md-3 mb-3">
+                <div class="col-lg-3 col-md-4 col-sm-12 mb-3">
                     <h4>Find Events</h4>
                     <ul>
                         <li><a href="#">Events for You</a></li>
@@ -313,7 +321,7 @@
                         <li><a href="#">Write for Us</a></li>
                     </ul>
                 </div>
-                <div class="col-md-2 mb-3">
+                <div class="col-lg-2 col-md-4 col-sm-12 mb-3">
                     <h4>Connect With Us</h4>
                     <ul>
                         <li><a href="#">Contact Support</a></li>
@@ -324,7 +332,7 @@
                         <li><a href="#">Instagram</a></li>
                     </ul>
                 </div>
-                <div class="col-md-4 mb-3 d-flex justify-content-center align-items-center newsletter-col">
+                <div class="col-lg-4 col-md-12 mb-3 d-flex justify-content-center align-items-center newsletter-col">
                     <h2>Subscribe To Our Newsletter</h2>
                     <form class="newsletter-form container d-flex justify-content-between align-items-center">
                         <input type="email" placeholder="Email Here">
@@ -337,13 +345,13 @@
                 </div>
             </div>
             <div class="row bottom-footer">
-                <div class="col-md-3 mb-3 footer-Logo">
+                <div class="col-lg-3 col-md-12 mb-3 footer-Logo d-flex justify-content-center">
                     <img src="img/footerLogo.png">
                 </div>
-                <div class="col-md-6 mb-3 d-flex justify-content-center align-items-center">
+                <div class="col-lg-6 col-md-12 mb-3 d-flex justify-content-center align-items-center">
                     <p class="text-center creds">© 2024 City Agenda . All Rights Reserved.</p>
                 </div>
-                <div class="col-md-3 mb-3 d-flex flex-column justify-content-center footer-social">
+                <div class="col-lg-3 col-md-12 mb-3 d-flex flex-column align-items-sm-center justify-content-center footer-social">
                     <h4>Follow Us</h4>
                     <div class="social-icons d-flex gap-3">
                         <i class="bi bi-twitter"></i>
@@ -356,6 +364,7 @@
             </div>
         </section>
     </footer>
+
     
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>

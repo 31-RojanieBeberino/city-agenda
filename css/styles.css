@@ -68,6 +68,13 @@ input, select, textarea, ul, li, button,
     color:#fff;
 }
 
+
+.navbar-content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .new-event{
     background-color: #AB39CD;
     padding:16px 40px!important;
@@ -225,7 +232,7 @@ input, select, textarea, ul, li, button,
 
 .event-title h3{
     color:#741774;
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 600;
 }
 
@@ -260,6 +267,10 @@ input, select, textarea, ul, li, button,
 
 .dropdown-menu.show{
     width: 100%;
+}
+
+.drop-cards{
+    width: 33.3%;
 }
 
 .drop-cards h4{
@@ -323,6 +334,7 @@ input, select, textarea, ul, li, button,
     color:#fff;
     font-size: 17px;
     line-height: 1em;
+    margin: 0;
 }
 
 .card-bottom div i{

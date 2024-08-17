@@ -1,6 +1,173 @@
+@media screen and (max-width:1024px){
+
+    .search-input{
+        width: 70%!important;
+    }
+
+    .search-toggle{
+        width: 30%!important;
+    }
+
+    .slider-section .next{
+        right: 0px!important
+    }
+
+    .slider-section .prev{
+        left: 0px;
+    }
+
+    .navbar-toggler{
+        border-color: #fff!important;
+        background-color: #fff!important;
+    }
+
+    .navbar-toggler, .navbar-toggler:focus{
+        outline: none!important;
+        box-shadow: none!important;
+    }
+
+    .banner.inner-page h3{
+        font-size: 45px;
+    }
+
+    .inner-page{
+        padding:100px 20px;
+    }
+
+    .faq-section h2{
+        font-size: 35px;
+    }
+
+    .inner-section h2{
+        font-size: 40px;
+    }
+
+    .contact-content{
+        flex-direction: column;
+    }
+
+    .contact-form-col{
+        width: 100%;
+        padding:50px 30px;
+    }
+
+    .contact-img-sec{
+        width: 100%;
+    }
+
+    .contact-img-sec img{
+        height: 500px;
+    }
+
+    .contact-sec-col img {
+        height: 400px;
+    }
+
+    .carousel-item{
+        flex: 0 0 calc(100% / 2)!important;
+    }
+
+    .main-section h2{
+        font-size: 35px;
+    }
+
+    .event-formats-cats div{
+        gap:10px;
+    }
+
+    .event-formats-cats div a{
+        font-size: 17px;
+    }
+
+    .progress-step .line{
+        right: -95px;
+    }
+
+    .event-input-detials-section label, 
+    .event-date-section{
+        width: 100%;
+    }
+
+    .main-btn{
+        width: auto;
+        padding:15px 20px;
+    }
+
+    .create-submit-btn, 
+    .create-submit-btn .main-btn{
+        width:230px ;
+    }
+
+    .ticket-publish h2{
+        font-size: 40px;
+    }
+
+    .event-banner{
+        height: 400px;
+    }
+
+    .event-sec{
+        padding:30px 20px;
+    }
+
+    .event-user-sec{
+        align-items: center;
+    }
+
+    .agenda-sec{
+        flex-direction: column;
+    }
+
+    .agend-date,
+    .agenda-content{
+        width: 100%;
+    }
+
+    .blog-item h3{
+        font-size: 35px;
+    }
+
+    .blog-list-item img{
+        width: 15%;
+    }
+
+
+    .modal-dialog{
+        width: 95%!important;
+    }
+
+
+    .login-sec{
+        padding:40px!important;
+    }
+
+    .reg-image-sec{
+        height: 300px
+    }
+
+    
+}
+
+
+
+
+
 @media screen and (max-width:500px){
     .nav-control{
         flex-direction: column;
+    }
+
+    .banner-img{
+        width: 200px;
+    }
+
+    .category-section{
+        flex-wrap: wrap;
+    }
+
+    .category-section a{
+        width: calc(100%/2);
+
     }
 
     .footer-Logo{
@@ -11,4 +178,312 @@
     .footer-social{
         align-items: center;
     }
+
+    .search-input{
+        width: 100%!important;
+    }
+
+    .search-toggle{
+        width: 100%!important;
+        padding:15px 25px;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+
+    .subs-title{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .subs-title h3{
+        font-size: 35px;
+        margin: 0;
+    }
+
+    .drop-cards{
+        width: 100%;
+    }
+
+    .big-event-section h2{
+        font-size: 40px;
+    }
+
+    .top-footer h4, .top-footer ul li{
+        text-align: center;
+    }
+
+    .heartIcon{
+        top:170px!important;
+    }
+
+    .banner.inner-page h3{
+        font-size: 35px;
+    }
+
+    .inner-page{
+        padding: 50px 20px;
+    }
+
+    .inner-title, .inner-section h3{
+        font-size: 35px;
+    }
+
+    .inner-page p{
+        font-size: 15px;
+    }
+
+    .blog-inner ul, .user-profile ul{
+        width: 100%;
+        flex-wrap: wrap;
+        row-gap:5px;
+    }
+
+    .blog-inner-section .testimonial-sec p,
+    .contact-form-col h2,
+    .inner-section h2{
+        font-size: 30px;
+    }
+
+    .category-content h2{
+        font-size: 40px;
+    }
+
+    .dropdown-toggle{
+        white-space: wrap!important;
+    }
+
+    .contact-img-sec img{
+        height: 300px;
+    }
+
+    .politics-grid-section .carousel{
+        padding: 0px;
+    }
+
+    .card{
+        width: 100%!important;
+    }
+
+    .carousel-item{
+        flex: 0 0 calc(100% / 1)!important;
+    }
+    
+    .card-bottom div p{
+        font-size: 13px!important;
+    }
+
+    .slide{
+        padding: 0px!important;
+    }
+
+    .banner{
+        padding:70px 20px;
+    }
+
+    .progress-step.active{
+        display: block;
+    }
+
+    .progress-step.active p {
+        font-size: 25px;
+    }
+
+    .progress-container{
+        justify-content: center;
+    }
+
+    .progress-step, 
+    .toggelHeader .main-btn,
+    .create-submit-btn,
+    .create-submit-btn .main-btn,
+    .ticket-card-sec img,
+    .ticket-details{
+        width: 100%;
+    }
+
+
+    .progress-step, .progress-step .line{
+        display: none;
+    }
+
+    .upload-section h2{
+        text-align: center;
+    }
+
+    .event-input-detials-section{
+        padding:30px 20px;
+    }
+
+    .event-input-detials-section label, .event-date-section{
+        font-size: 25px;
+    }
+
+    .event-input-detials-section .event-date-section .group-toggle,
+    .date-inputs-fields,
+    .uploadButton,
+    .toggelHeader,
+    .ticket-card-sec{
+        flex-direction: column;
+    }
+
+    .toggelHeader{
+        align-items: flex-start;
+        gap:20px;
+    }
+
+    .progress-step.active.mobile{
+        display: none;
+    }
+
+    .publish-form{
+        padding-top:0px;
+    }
+
+    .top-footer h2{
+        font-size: 25px;
+    }
+
+    .event-countdown .countdown{
+        gap:10px;
+    }
+
+
+    .event-countdown .countdown .countLabel h3{
+        font-size: 25px!important;
+    }
+
+    .event-countdown .countdown .countLabel span{
+        font-size: 15px!important;
+    }
+
+    .event-countdown .countdown hr{
+        height: 40px!important;
+    }
+
+    .event-sec h1{
+        font-size: 35px;
+    }
+
+    .event-user-sec{
+        flex-direction: column;
+        gap:10px;
+        align-items: center;
+    }
+
+    .event-user-sec .main-btn,
+    .dl-sec{
+        width: 100%;
+    }
+
+    .date-location{
+        flex-direction: column;
+    }
+
+    .event-sec h2{
+        font-size: 30px;
+    }
+
+    .event-sec h4{
+        font-size: 20px;
+    }
+
+    .event-sec img{
+        height: 300px;
+    }
+
+    .refund-list li{
+        align-items: flex-start;
+    }
+
+    .agenda-content{
+        flex-direction: column;
+    }
+
+    .agenda-details{
+        width: 100%!important;
+        padding: 25px 20px;
+    }
+
+    .agend-person{
+        width: 100%!important;
+        align-items: center;
+    }
+
+    .agend-person img{
+        height: 80px!important;
+    }
+
+    .sponsors-section h2{
+        font-size: 30px;
+    }
+
+    .sponsors-logos{
+        flex-wrap: wrap;
+    }
+
+    .sponsors-logos img{
+        width: calc(100%/2);
+    }
+
+    .user-profile img {
+        height: 80px!important;
+    }
+
+    .main-btn{
+        font-size: 15px!important;
+    }
+
+    .normal-event-section{
+        padding-bottom: 0px;
+    }
+
+    .icon-controls{
+        justify-content: flex-start;
+    }
+
+    .find-free-political-section{
+        gap:20px;
+    }
+
+
+
+    .blog-list-item img{
+        width: 20%;
+    }
+
+    .banner.inner-page h5{
+        font-size: 20px;
+    }
+
+    .blog-item ul, .blog-list-item div ul, .related-card ul{
+        flex-wrap: wrap;
+        row-gap: 0;
+    }
+
+    .blog-list-item{
+        gap:10px;
+    }
+
+    .prev-next-sect{
+        margin-bottom:25px;
+    }
+
+    .modal-details form .fullname{
+        flex-direction: column;
+    }
+
+    .login-sec .regLogo{
+        width: 150px;
+    }
+
+    .login-sec{
+        padding:40px 20px!important;
+    }
+
+    .sign-up-with button span{
+        width: 80%;
+    }
+
+
+    
 }
