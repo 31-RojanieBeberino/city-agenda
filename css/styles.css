@@ -229,13 +229,13 @@ input, select, textarea, ul, li, button,
 
 .event-title h2{
     color:#741774;
-    font-size: 45px;
+    font-size: 38px;
     font-weight: 600;
 }
 
 .event-title h3{
     color:#741774;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 600;
 }
 
@@ -254,7 +254,7 @@ input, select, textarea, ul, li, button,
 
 .btn-secondary{
     width: 100%;
-    padding:20px!important;
+    padding:15px!important;
     font-size: 18px!important;
     font-family: 'General Sans';
     background-color: #fff!important;
@@ -288,7 +288,7 @@ input, select, textarea, ul, li, button,
 }
 
 .drop-cards h4{
-    font-size: 20px;
+    font-size: 18px;
     color:#741774;
 }
 
@@ -1835,7 +1835,7 @@ button.next {
 
 
 .footer-section{
-    padding:60px 20px 0px;
+    padding:40px 20px 0px;
     background: rgb(174,72,153);
     background: linear-gradient(267deg, rgba(174,72,153,1) 31%, rgba(0,0,0,1) 100%);
 }
@@ -1843,18 +1843,19 @@ button.next {
 
 .top-footer{
     border-bottom: 2px solid #ffffff5d;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
 }
 
 .top-footer div{
     display: flex;
     flex-direction: column;
-    gap:15px;
+    gap:5px;
 }
 
 .top-footer h4{
     color:#fff;
     font-weight: 500;
+    font-size: 18px;
 }
 
 .top-footer ul{
@@ -1862,19 +1863,20 @@ button.next {
     padding: 0;
     display: flex;
     flex-direction: column;
-    gap:5px;
+    gap:0px;
 }
 
 .top-footer li a{
     text-decoration: none;
     color:#fff;
+    font-size: 14px;
 }
 
 .top-footer h2{
     color:#fff;
     font-weight: 500;
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .newsletter-form{
@@ -1886,12 +1888,12 @@ button.next {
     background-color: transparent;
     border: 0px;
     outline:none!important;
-
+    width: 80%;
 }
 
 .newsletter-form input[type="email"]::placeholder{
     color:#fff;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .newsletter-form i{
@@ -1906,16 +1908,17 @@ button.next {
 }
 
 .bottom-footer{
-    padding:50px 0px 20px;
+    padding:20px 0px 20px;
 }
 
 
 .bottom-footer div img{
-    width: 200px;
+    width: 120px;
 }
 
 .bottom-footer .creds{
     color:#fff;
+    margin-bottom: 0;
 }
 
 .bottom-footer h4{
@@ -1924,7 +1927,7 @@ button.next {
 }
 
 .bottom-footer .social-icons i {
-    font-size: 40px;
+    font-size: 30px;
     color:#fff;
 }
 

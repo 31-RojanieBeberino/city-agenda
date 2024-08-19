@@ -168,6 +168,16 @@
         height: 300px
     }
 
+
+    button.prev {
+        left: 20px;
+    }
+    
+    button.next {
+        right:20px;
+    }
+    
+
     
 }
 
