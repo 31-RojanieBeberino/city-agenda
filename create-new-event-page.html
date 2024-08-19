@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>City Agenda | About Us</title>
+    <title>City Agenda | Create Event</title>
 
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -19,15 +19,15 @@
   
 <body>
     <nav class="navbar navbar-expand-lg main-nav container-fluid">
-        <div class="container w-100 justify-content-center">
+        <div class="w-100 justify-content-center">
             <div class="row w-100 align-items-center justify-content-end justify-content-sm-between">
-                <div class="col-md-7 col-sm-10 d-flex align-items-center justify-content-between justify-content-sm-start">
+                <div class="col-md-7 ps-4 col-sm-10 d-flex align-items-center justify-content-between justify-content-sm-start">
                     <!-- Logo -->
                     <a class="navbar-brand" href="#">
                         <img src="img/Logo.png" alt="Logo">
                     </a>
                     <!-- Search Form -->
-                    <form class="d-flex align-items-center gap-1 nav-form-search p-2 pe-3 ps-3" role="search">
+                    <form class="d-flex align-items-center gap-1 nav-form-search" role="search">
                         <i class="bi bi-search"></i>
                         <input class="form-control me-2" type="search" placeholder="Search City Agenda" aria-label="Search City Agenda">
                     </form>
@@ -43,7 +43,7 @@
                     <div class="d-flex gap-3 align-items-center nav-control justify-content-lg-end justify-content-between pt-lg-0 pb-lg-0 pt-sm-3 pb-sm-3 p-0">
                         <a href="create-new-event-page.html"><button class="new-event" >Create New Event</button></a>
                         <div class="nav-action d-flex gap-3 align-items-center">
-                            <i class="bi bi-people-fill"></i>
+                            <!-- <i class="bi bi-people-fill"></i> -->
                             <i class="bi bi-grid-3x3-gap-fill"></i>
                             <hr class="d-none d-sm-block">
                             <i class="bi bi-person-fill"></i>
@@ -57,9 +57,10 @@
 
 
 
+
     <section class="container-fluid banner inner-page create-event">
         <div class="container d-flex flex-column align-items-center gap-3">
-            <h3> Welcome To City Agenda</h3>
+            <h3> Welcome To CityAgenda</h3>
             <p>This Platform Was Built To Support Entrepreneurs, Politics, Business, Religions, Education, Cultures And Sports Events. You Can Promote Your Event To The Public And Start Selling Tickets, We Do Not Support Nightclubs, Music Festivals, Or Parties Types Of Events Please Do Not Use City Agenda Platform Of These Types Of Event You Can Use Different Platforms For This Purpose. If You Want To Learn More Read Our Policies In Terms Of Use And Privacy Before You Publish Your Event.</p>
         </div>
     </section>
@@ -105,9 +106,12 @@
                             Select Category
                         </button>
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">Politics</a></li>
+                            <li><a class="dropdown-item" href="#">Religions</a></li>
+                            <li><a class="dropdown-item" href="#">Business</a></li>
+                            <li><a class="dropdown-item" href="#">Sports</a></li>
+                            <li><a class="dropdown-item" href="#">Education</a></li>
+                            <li><a class="dropdown-item" href="#">Cultures</a></li>
                         </ul>
                       </div>
                 </label>
@@ -144,7 +148,7 @@
                     <div class="group-toggle">
                         <button class="main-btn select-button">Single Event</button>
                         <button class="main-btn select-button">Recurring Event</button>
-                        <button class="main-btn select-button">Recorded Event</button>
+                        <!-- <button class="main-btn select-button">Recorded Event</button> -->
                     </div>
                 </div>
 
@@ -168,21 +172,45 @@
                                 <input type="time">
                             </div>
                         </div>
+                        <div class="date-fields-item">
+                            <p>Occurs</p>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Occurs
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Once</a></li>
+                                    <li><a class="dropdown-item" href="#">Daily</a></li>
+                                    <li><a class="dropdown-item" href="#">Weekly</a></li>
+                                    <li><a class="dropdown-item" href="#">Monthly</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="date-inputs-fields">
+                        <div class="date-fields-item location-inputs">
+                            <!-- <p>Location Name*</p> -->
+                            <div class="input-field">
+                                <input type="text" placeholder="Enter Location Name" required>
+                                <input type="text" placeholder="Address" required>
+                                <input type="text" placeholder="City" required>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
 
-                <div class="event-date-section">
+                <!-- <div class="event-date-section">
                     Location*
                     <div class="group-toggle">
                         <button class="main-btn select-button">Venuet</button>
                         <button class="main-btn select-button">Online Event</button>
                         <button class="main-btn select-button">Recorded Event</button>
                     </div>
-                </div>
+                </div> -->
 
 
-                <div class="event-date-section">
+                <!-- <div class="event-date-section">
                     <div class="date-inputs-fields">
                         <div class="date-fields-item location-inputs">
                             <p>Location Name*</p>
@@ -193,7 +221,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
 
                 <div class="event-date-section">
@@ -265,6 +293,7 @@
                                     <div class="form-row form-section">
                                         <div class="form-group form-section">
                                             <input type="text" class="agenda-title" placeholder="Title*" required>
+                                            <textarea rows="7" class="agenda-description" placeholder="Add Description" required></textarea>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6 mb-3 gap-2 d-flex flex-column">
@@ -282,7 +311,7 @@
                                         </div>
                                         <div class="form-group form-section buttonLink">
                                             <a href="#" class="mr-3"><i class="icon">&#128100;</i> Host Or Artist</a>
-                                            <a href="#"><i class="icon">&#9998;</i> Add Description</a>
+                                            <!-- <a href="#"><i class="icon">&#9998;</i> Add Description</a> -->
                                         </div>
                                     </div>
                                 </div>
@@ -308,12 +337,12 @@
                                         <div class="row">
                                             <div class="col-md-5 mb-3 gap-2 d-flex flex-column">
                                                 <div class="input-group">
-                                                    <input type="text" class="form-control" placeholder="Name Here*" required>
+                                                    <input type="text" class="form-control" placeholder="Full Name" required>
                                                 </div>
                                             </div>
                                             <div class="col-md-5 mb-3 gap-2 d-flex flex-column">
                                                 <div class="input-group">
-                                                    <input type="text" class="form-control" placeholder="Type Here*" required>
+                                                    <input type="text" class="form-control" placeholder=" Job Title" required>
                                                 </div>
                                             </div>
                                             <div class="col-md-2 mb-3 gap-2 d-flex flex-column">
@@ -321,33 +350,53 @@
                                                     <input type="file" id="file-upload" />
                                                     <div for="file-upload" class="file-upload-btn">
                                                         <i class="bi bi-card-image"></i>
-                                                        Add Image
+                                                        Picture
                                                     </div>
                                                 </div>
                                             </div>
+
+                                            <div class="col-lg-12 d-flex flex-column">
+                                                <div class="input-group">
+                                                    <textarea name="description" maxlength="240" rows="4" class="agenda-description" placeholder="Add Description" required></textarea>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="form-group form-section buttonLink">
+                                        <!-- <div class="form-group form-section buttonLink">
                                             <a href="#" class="mr-3"><i class="icon">&#128100;</i> Host Or Artist</a>
                                             <a href="#"><i class="icon">&#9998;</i> Add Description</a>
-                                        </div>
+                                        </div> -->
                                     </div>
                                     <div class="form-row form-section">
                                         <h5>Social Media Links*</h5>
                                         <div id="socialLink">
                                             <div class="row">
-                                                <div class="col-md-5 mb-3 gap-2 d-flex flex-column">
+                                                <div class="col-md-6 mb-3 gap-2 d-flex flex-column">
                                                     <div class="input-group">
-                                                        <input type="url" class="form-control" placeholder="Link Here*" required>
+                                                        <input type="url" class="form-control" placeholder="Facebook" required>
+                                                        <i class="bi bi-facebook"></i>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-5 mb-3 gap-2 d-flex flex-column">
+                                                <div class="col-md-6 mb-3 gap-2 d-flex flex-column">
                                                     <div class="input-group">
-                                                        <input type="url" class="form-control" placeholder="Link Here*" required>
+                                                        <input type="url" class="form-control" placeholder="Instagram" required>
+                                                        <i class="bi bi-instagram"></i>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-2 mb-3 gap-2 d-flex flex-column">
+                                                <div class="col-md-6 mb-3 gap-2 d-flex flex-column">
+                                                    <div class="input-group">
+                                                        <input type="url" class="form-control" placeholder="Youtube" required>
+                                                        <i class="bi bi-youtube"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 mb-3 gap-2 d-flex flex-column">
+                                                    <div class="input-group">
+                                                        <input type="url" class="form-control" placeholder="Twitter X" required>
+                                                        <i class="bi bi-twitter"></i>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="col-md-2 mb-3 gap-2 d-flex flex-column">
                                                     <button class="main-btn add-more-btn">+ Add More</button>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                     </div>
@@ -365,42 +414,115 @@
                         </div>
                         <div class="collapse" id="sponsors-and-partner">
                             <div class="card card-body">
-                                <div id="SpeakersOrHosts">
-                                    <div class="form-row form-section">
-                                        <h3>Sponsors And Partner*</h3>
-                                        <div class="row">
-                                            <div class="col-md-10 mb-3 gap-2 d-flex flex-column">
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control" placeholder="Descriptions*" required>
+                                <div id="socialLink-sap">
+                                    <div class="row">
+                                        <div class="col-lg-12 form-row form-section">
+                                            <h3>Sponsors And Partner*</h3>
+                                            <div class="row">
+                                                <div class="col-md-12 mb-3 gap-2 d-flex flex-column">
+                                                    <div class="input-group">
+                                                        <textarea name="description" maxlength="240" rows="4" class="agenda-description" placeholder="Add General Description" required></textarea>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-2 mb-3 gap-2 d-flex flex-column">
-                                                <div class="input-group img-upload-btn">
-                                                    <input type="file" id="file-upload" />
-                                                    <div for="file-upload" class="file-upload-btn">
-                                                        <i class="bi bi-card-image"></i>
-                                                        Add Image
+                                        </div>
+                                        <div class="col-lg-12 form-row form-section">
+                                            <h5>Add Sponsor Logo Link</h5>
+                                            <div id="linkSponsor">
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-3 gap-2 d-flex flex-column">
+                                                        <div class="input-group">
+                                                            <input type="url" class="form-control" placeholder="Link Here*" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 mb-3 gap-2 d-flex flex-column">
+                                                        <div class="input-group img-upload-btn">
+                                                            <input type="file" id="file-upload" required/>
+                                                            <div for="file-upload" class="file-upload-btn">
+                                                                <i class="bi bi-card-image"></i>
+                                                                Add the Sponsor Logo
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3 mb-3 gap-2 d-flex flex-column">
+                                                        <button class="main-btn add-more-btn-sap">+ Add More Sponsor</button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="form-row form-section">
-                                        <h5>Social Media Links*</h5>
-                                        <div id="socialLink-sap">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="event-content-field-item">
+                        <div class="toggelHeader" data-bs-toggle="collapse" href="#meet-the-speakers" role="button" aria-expanded="false" aria-controls="meet-the-speakers">
+                            <h3><i class="bi bi-people"></i>Meet the Speakers*</h3>
+                            <button class="main-btn" type="button" data-bs-toggle="collapse" data-bs-target="#meet-the-speakers" aria-expanded="false" aria-controls="meet-the-speakers">
+                                + Add 
+                            </button>
+                        </div>
+                        <div class="collapse" id="meet-the-speakers">
+                            <div class="card card-body">
+                                <div id="meet-the-speakers-section">
+                                    <div class="row">
+                                        <div class="col-lg-12 form-row form-section">
+                                            <h3>Speakers</h3>
                                             <div class="row">
                                                 <div class="col-md-5 mb-3 gap-2 d-flex flex-column">
                                                     <div class="input-group">
-                                                        <input type="url" class="form-control" placeholder="Link Here*" required>
+                                                        <input type="text" class="form-control" placeholder="Speakers's Name" required>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-5 mb-3 gap-2 d-flex flex-column">
+                                                <div class="col-md-4 mb-3 gap-2 d-flex flex-column">
                                                     <div class="input-group">
-                                                        <input type="url" class="form-control" placeholder="Link Here*" required>
+                                                        <input type="text" class="form-control" placeholder="Speaker's Job" required>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-2 mb-3 gap-2 d-flex flex-column">
-                                                    <button class="main-btn add-more-btn-sap">+ Add More</button>
+                                                <div class="col-md-3 mb-3 gap-2 d-flex flex-column">
+                                                    <div class="input-group img-upload-btn">
+                                                        <input type="file" id="file-upload" required/>
+                                                        <div for="file-upload" class="file-upload-btn">
+                                                            <i class="bi bi-card-image"></i>
+                                                            Speaker Image
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 form-row form-section">
+                                            <h5>Sponsor Socail Link</h5>
+                                            <div id="meetthespeakers">
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-3 gap-2 d-flex flex-column">
+                                                        <div class="input-group">
+                                                            <input type="url" class="form-control" placeholder="Facebook" required>
+                                                            <i class="bi bi-facebook"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 mb-3 gap-2 d-flex flex-column">
+                                                        <div class="input-group">
+                                                            <input type="url" class="form-control" placeholder="Instagram" required>
+                                                            <i class="bi bi-instagram"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 mb-3 gap-2 d-flex flex-column">
+                                                        <div class="input-group">
+                                                            <input type="url" class="form-control" placeholder="Youtube" required>
+                                                            <i class="bi bi-youtube"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 mb-3 gap-2 d-flex flex-column">
+                                                        <div class="input-group">
+                                                            <input type="url" class="form-control" placeholder="Twitter X" required>
+                                                            <i class="bi bi-twitter"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3 mb-3 gap-2 d-flex flex-column">
+                                                        <button class="main-btn meetthespeakers-btn">+ Add More Speaker</button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -649,26 +771,47 @@
     $('.add-more-btn-sap').click(function () {
         // Duplicate the form fields and append them to the form
         $('#socialLink-sap').append(`
-            <div class="row">
-                <div class="col-md-5 mb-3 gap-2 d-flex flex-column">
-                    <div class="input-group">
-                        <input type="url" class="form-control" placeholder="Link Here*" required>
+            <div class="row sap">
+                <div class="col-lg-12 form-row form-section">
+                    <h3>Sponsors And Partner*</h3>
+                    <div class="row">
+                        <div class="col-md-12 mb-3 gap-2 d-flex flex-column">
+                            <div class="input-group">
+                                <textarea name="description" maxlength="240" rows="4" class="agenda-description" placeholder="Add General Description" required></textarea>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-5 mb-3 gap-2 d-flex flex-column">
-                    <div class="input-group">
-                        <input type="url" class="form-control" placeholder="Link Here*" required>
+                <div class="col-lg-12 form-row form-section">
+                    <h5>Add Sponsor Logo Link</h5>
+                    <div id="linkSponsor">
+                        <div class="row">
+                            <div class="col-md-6 mb-3 gap-2 d-flex flex-column">
+                                <div class="input-group">
+                                    <input type="url" class="form-control" placeholder="Link Here*" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3 gap-2 d-flex flex-column">
+                                <div class="input-group img-upload-btn">
+                                    <input type="file" id="file-upload" required/>
+                                    <div for="file-upload" class="file-upload-btn">
+                                        <i class="bi bi-card-image"></i>
+                                        Add the Sponsor Logo
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-3 gap-2 d-flex flex-column">
+                                <button class="main-btn remove-btn-sap"><i class="bi bi-x-lg"></i> Remove</button>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-2 mb-3 gap-2 d-flex flex-column">
-                    <button class="main-btn remove-btn-sap"><i class="bi bi-x-lg"></i> Remove</button>
                 </div>
             </div>
         `);
     });
 
     $('#socialLink-sap').on('click', '.remove-btn-sap', function () {
-        $(this).closest('.row').remove();
+        $(this).closest('.sap').remove();
     });
 
 
@@ -701,6 +844,77 @@
 
     $('#faqSection').on('click', '.faq-delete-btn', function () {
         $(this).closest('.row').remove();
+    });
+
+
+    $('.meetthespeakers-btn').click(function () {
+        // Duplicate the form fields and append them to the form
+        $('#meet-the-speakers-section').append(`
+            <div class="row mts">
+                <div class="col-lg-12 form-row form-section">
+                    <h3>Speakers</h3>
+                    <div class="row">
+                        <div class="col-md-5 mb-3 gap-2 d-flex flex-column">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Speakers's Name" required>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3 gap-2 d-flex flex-column">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Speaker's Job" required>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3 gap-2 d-flex flex-column">
+                            <div class="input-group img-upload-btn">
+                                <input type="file" id="file-upload" required/>
+                                <div for="file-upload" class="file-upload-btn">
+                                    <i class="bi bi-card-image"></i>
+                                    Speaker Image
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 form-row form-section">
+                    <h5>Sponsor Socail Link</h5>
+                    <div id="meetthespeakers">
+                        <div class="row">
+                            <div class="col-md-6 mb-3 gap-2 d-flex flex-column">
+                                <div class="input-group">
+                                    <input type="url" class="form-control" placeholder="Facebook" required>
+                                    <i class="bi bi-facebook"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3 gap-2 d-flex flex-column">
+                                <div class="input-group">
+                                    <input type="url" class="form-control" placeholder="Instagram" required>
+                                    <i class="bi bi-instagram"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3 gap-2 d-flex flex-column">
+                                <div class="input-group">
+                                    <input type="url" class="form-control" placeholder="Youtube" required>
+                                    <i class="bi bi-youtube"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3 gap-2 d-flex flex-column">
+                                <div class="input-group">
+                                    <input type="url" class="form-control" placeholder="Twitter X" required>
+                                    <i class="bi bi-twitter"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3 gap-2 d-flex flex-column">
+                                <button class="main-btn meetthespeakers-btn-remove">+ Remove Speaker</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `);
+    });
+
+    $('#meet-the-speakers-section').on('click', '.meetthespeakers-btn-remove', function () {
+        $(this).closest('.mts').remove();
     });
 
 

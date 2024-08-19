@@ -1,3 +1,26 @@
+/* Media Query for Mobile: 1 item visible */
+@media (max-width: 768px) {
+    .slide {
+        flex: 0 0 100%;
+    }
+}
+
+/* Media Query for Tablet: 3 items visible */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .slide {
+        flex: 0 0 33.33%;
+    }
+}
+
+/* Default: 5 items visible on larger screens */
+@media (min-width: 1025px) {
+    .slide {
+        flex: 0 0 20%;
+    }
+}
+
+
+
 @media screen and (max-width:1024px){
 
     .search-input{
