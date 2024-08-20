@@ -517,6 +517,35 @@
         width: 80%;
     }
 
+    .confernce-content h2{
+        font-size: 40px;
+    }
+
+    .confeLabel h3{
+        font-size: 20px;
+    }
+
+    .confeLabel span{
+        font-size: 10px;
+    }
+
+    .confernce-counter{
+        margin-bottom:-25px;
+    }
+
+    .confeLabel{
+        height: 60px;
+        width: 50px;
+    }
+
+    .confernce-section{
+        padding:100px 20px 0px;
+    }
+
+    .confernce-inner-sec h3{
+        font-size: 35px;
+    }
+
 
     
 }
