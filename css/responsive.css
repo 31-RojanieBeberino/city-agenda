@@ -176,6 +176,32 @@
     button.next {
         right:20px;
     }
+
+    .ticket-modal-content{
+        width: 90%!important;
+        padding:30px 25px;
+    }
+
+    .ticketBtn{
+        width: 100px!important;
+        padding:10px!important;
+    }
+
+    .ticket-option-items{
+        width: 100%;
+    }
+
+    .modal-ticket-buttons-sec{
+        width: 100%;
+        display: -webkit-inline-box;
+    }
+
+    .ticket-modal-content h3{
+        font-size: 25px!important;
+    }
+
+
+    
     
 
     
@@ -546,8 +572,37 @@
         font-size: 35px;
     }
 
-    
+
+    .formSubmit{
+       flex-direction: column;
+    }
 
 
+
+    .tick-opt-item .option-detials h4{
+        font-size: 18px;
+    }
+
+    .tick-opt-item .option-detials p{
+        font-size: 13px;
+    }
+
+    .tick-opt-item i{
+        width:25px;
+        height: 25px;
+    }
+
+    .tick-opt-item{
+        padding:15px;
+        gap:10px;
+    }
+
+    .tick-opt-item .img-option{
+        width: 15%;
+    }
+
+    .tick-opt-item .option-detials{
+        gap:5px;
+    }
     
 }

@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+  
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>City Agenda | Create Ticket</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+  
+<body>
+    <nav class="navbar navbar-expand-lg main-nav container-fluid">
+        <div class="w-100 justify-content-center">
+            <div class="row w-100 align-items-center justify-content-end justify-content-sm-between">
+                <div class="col-md-7 ps-4 col-sm-10 d-flex align-items-center justify-content-between justify-content-sm-start">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="#">
+                        <img src="img/Logo.png" alt="Logo">
+                    </a>
+                    <!-- Search Form -->
+                    <form class="d-flex align-items-center gap-1 nav-form-search" role="search">
+                        <i class="bi bi-search"></i>
+                        <input class="form-control me-2" type="search" placeholder="Search City Agenda" aria-label="Search City Agenda">
+                    </form>
+                </div>
+                <!-- Toggler Button for Mobile -->
+                <div class="col-2 d-lg-none d-flex justify-content-end mt-0 mt-lg-0">
+                    <button class="navbar-toggler p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <!-- Navbar Links -->
+                <div class="col-md-5 col-sm-12 collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="d-flex gap-3 align-items-center nav-control justify-content-lg-end justify-content-between pt-lg-0 pb-lg-0 pt-sm-3 pb-sm-3 p-0">
+                        <a href="create-new-event-page.html"><button class="new-event" >Create New Event</button></a>
+                        <div class="nav-action d-flex gap-3 align-items-center">
+                            <!-- <i class="bi bi-people-fill"></i> -->
+                            <i class="bi bi-grid-3x3-gap-fill"></i>
+                            <hr class="d-none d-sm-block">
+                            <i class="bi bi-person-fill"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <section class="container-fluid ticket-section">
+        <div class="container d-flex flex-column gap-5">
+            <div class="progress-container">
+                <div class="progress-step active mobile">
+                    <p>Build Event Page</p>
+                    <div class="circle">1</div>
+                    <div class="line"></div>
+                </div>
+                <div class="progress-step active">
+                    <p>Add Tickets</p>
+                    <div class="circle">2</div>
+                    <div class="line"></div>
+                </div>
+                <div class="progress-step mobile">
+                    <p>Publish</p>
+                    <div class="circle">3</div>
+                </div>
+            </div>
+
+            <div class="ticket-option-sec">
+                <h3>Create Tickets</h3>
+                <p>Choose A Ticket Type Or Build A Section With Multiple Ticket Types.</p>
+
+
+                <div class="ticket-option-items">
+                    <div class="tick-opt-item" type="button" data-bs-toggle="modal" data-bs-target="#paidModal">
+                        <img class="img-option" src="img/paidImg.png">
+                        <div class="option-detials">
+                            <h4>Paid</h4>
+                            <p>Create A Ticket That People Have To Pay For.</p>
+                        </div>
+                        <i class="bi bi-arrow-right-short"></i>
+                    </div>
+                    <div class="tick-opt-item" type="button" data-bs-toggle="modal" data-bs-target="#paidModal">
+                        <img class="img-option" src="img/freeImg.png">
+                        <div class="option-detials">
+                            <h4>Free</h4>
+                            <p>Create A Ticket That No One Has To Pay For.</p>
+                        </div>
+                        <i class="bi bi-arrow-right-short"></i>
+                    </div>
+                    <div class="tick-opt-item" type="button" data-bs-toggle="modal" data-bs-target="#paidModal">
+                        <img class="img-option" src="img/danationImg.png">
+                        <div class="option-detials">
+                            <h4>Donation</h4>
+                            <p>Let People Pay Any Amount For Their Ticket.</p>
+                        </div>
+                        <i class="bi bi-arrow-right-short"></i>
+                    </div>
+                    <div class="tick-opt-item" type="button" data-bs-toggle="modal" data-bs-target="#paidModal">
+                        <img class="img-option" src="img/no-ticketImg.png">
+                        <div class="option-detials">
+                            <h4>No Tickets</h4>
+                            <p>Do Need To Pay For A Ticket</p>
+                        </div>
+                        <i class="bi bi-arrow-right-short"></i>
+                    </div>
+                </div>
+
+                <div  class="modal fade" id="paidModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content ticket-modal-content">
+                            <!-- <i class="bi bi-x-circle"></i> -->
+                            <h3>Tickets Details</h3>
+                            <div class="modal-ticket-buttons-sec">
+                                <button class="main-btn ticketBtn" data-bs-toggle="collapse" href="#paidForm" role="button" aria-expanded="true" aria-controls="paidForm">Paid</button>
+                                <button class="main-btn ticketBtn" data-bs-toggle="collapse" href="#freeForm" role="button" aria-expanded="false" aria-controls="freeForm">Free</button>
+                                <button class="main-btn ticketBtn" data-bs-toggle="collapse" href="#Donation" role="button" aria-expanded="false" aria-controls="Donation">Donation</button>
+                                <button class="main-btn ticketBtn">No Tickets</button>
+                            </div>
+
+                            <div class="ticket-tab-sections">
+                                <div class="collapse show" id="paidForm" data-bs-parent=".ticket-tab-sections">
+                                    <div class="card card-body">
+                                        <form>
+                                            <label>
+                                                Ticket Name*
+                                                <input type="text" name="ticket-name-paidForm" placeholder="General Admission">
+                                            </label>
+                                            <label>
+                                                Description
+                                                <input type="text" name="discription-paidForm" placeholder="General Admission">
+                                            </label>
+                                            <label>
+                                                Available Quantity*
+                                                <input type="text" name="quality-paidForm" placeholder="12">
+                                            </labe>
+                                            <label>
+                                                Price*
+                                                <input type="text" name="price-paidForm" placeholder="€0.00">
+                                            </label>
+                                            <div class="salesTimeSec">
+                                                <label>
+                                                    Sales Start
+                                                    <input type="date" name="sales-start-paidForm" placeholder="07/27/2024">
+                                                </label>
+                                                <label>
+                                                    End Time
+                                                    <input type="time" name="sales-end-paidForm" placeholder="07/27/2024">
+                                                </label>
+                                            </div>
+                                            <p><i class="bi bi-info-circle-fill"></i>Event Time Zone Is EDT</p>
+                                            <div class="formSubmit">
+                                                <button class="main-btn formSubmit-btn-cancel">Cancel<i class="bi bi-arrow-up-right"></i></button>
+                                                <button type="submitt" class="main-btn formSubmit-btn-submit">Save & Continue<i class="bi bi-arrow-up-right"></i></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+
+                                <div class="collapse" id="freeForm" data-bs-parent=".ticket-tab-sections">
+                                    <div class="card card-body">
+                                        <form>
+                                            <label>
+                                                Ticket Name*
+                                                <input type="text" name="ticket-name-freeForm" placeholder="General Admission">
+                                            </label>
+                                            <label>
+                                                Description
+                                                <input type="text" name="description-freeForm" placeholder="General Admission">
+                                            </label>
+                                            <label>
+                                                Available Quantity*
+                                                <input type="text" name="quality-freeForm" placeholder="12">
+                                            </labe>
+                                            <label>
+                                                Price*
+                                                <input type="text" name="price-freeForm" placeholder="€0.00" disabled class="priceInput">
+                                            </label>
+                                            <div class="salesTimeSec">
+                                                <label>
+                                                    Sales Start
+                                                    <input type="date" name="sales-start-freeForm" placeholder="07/27/2024">
+                                                </label>
+                                                <label>
+                                                    End Time
+                                                    <input type="time" name="sales-end-freeForm" placeholder="07/27/2024">
+                                                </label>
+                                            </div>
+                                            <p><i class="bi bi-info-circle-fill"></i>Event Time Zone Is EDT</p>
+                                            <div class="formSubmit">
+                                                <button class="main-btn formSubmit-btn-cancel">Cancel<i class="bi bi-arrow-up-right"></i></button>
+                                                <button type="submitt" class="main-btn formSubmit-btn-submit">Save & Continue<i class="bi bi-arrow-up-right"></i></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                
+
+                                <div class="collapse" id="Donation" data-bs-parent=".ticket-tab-sections">
+                                    <div class="card card-body">
+                                        <form>
+                                            <label>
+                                                Ticket Name*
+                                                <input type="text" name="ticket-name-Donation" placeholder="General Admission">
+                                            </label>
+                                            <label>
+                                                Description
+                                                <input type="text" name="description-Donation" placeholder="General Admission">
+                                            </label>
+                                            <label>
+                                                Available Quantity*
+                                                <input type="text" name="quality-Donation" placeholder="12">
+                                            </labe>
+                                            <label>
+                                                Price*
+                                                <input type="text" name="price-Donation" placeholder="€0.00" disabled class="priceInput">
+                                            </label>
+                                            <label class="checkbox">
+                                                <input type="checkbox" name="">
+                                                Absorb Fees: Ticketing Fees Are Deducted From Your Donation Amount
+                                            </label>
+                                            <div class="salesTimeSec">
+                                                <label>
+                                                    Sales Start
+                                                    <input type="date" name="sales-start-Donation" placeholder="07/27/2024">
+                                                </label>
+                                                <label>
+                                                    End Time
+                                                    <input type="time" name="sales-end-Donation" placeholder="07/27/2024">
+                                                </label>
+                                            </div>
+                                            <p><i class="bi bi-info-circle-fill"></i>Event Time Zone Is EDT</p>
+                                            <div class="formSubmit">
+                                                <button class="main-btn formSubmit-btn-cancel">Cancel<i class="bi bi-arrow-up-right"></i></button>
+                                                <button type="submitt" class="main-btn formSubmit-btn-submit">Save & Continue<i class="bi bi-arrow-up-right"></i></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    
+
+
+
+    <footer class="container-fluid footer-section">
+        <section class="container">
+            <div class="row top-footer">
+                <div class="col-lg-3 col-md-4 col-sm-12 mb-3">
+                    <h4>Plan Events</h4>
+                    <ul>
+                        <li><a href="#">Publish Your Events</a></li>
+                        <li><a href="#">Promote Your Events</a></li>
+                        <li><a href="#">Sell Tickets Online</a></li>
+                        <li><a href="#">Host Recorded Events</a></li>
+                        <li><a href="#">Pricing Plans</a></li>
+                        <li><a href="#">Event Manager App</a></li>
+                        <li><a href="#">Rank Your Event</a></li>
+                        <li><a href="#">Event Listing</a></li>
+                        <li><a href="#">Learn Event Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 mb-3">
+                    <h4>Find Events</h4>
+                    <ul>
+                        <li><a href="#">Events for You</a></li>
+                        <li><a href="#">Virtual Events</a></li>
+                        <li><a href="#">Get Event Updates</a></li>
+                        <li><a href="#">Event Discovery App</a></li>
+                        <li><a href="#">Write for Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-12 mb-3">
+                    <h4>Connect With Us</h4>
+                    <ul>
+                        <li><a href="#">Contact Support</a></li>
+                        <li><a href="#">Contact Sales</a></li>
+                        <li><a href="#">X</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12 mb-3 d-flex justify-content-center align-items-center newsletter-col">
+                    <h2>Subscribe To Our Newsletter</h2>
+                    <form class="newsletter-form container d-flex justify-content-between align-items-center">
+                        <input type="email" placeholder="Email Here">
+                        <i class="bi bi-arrow-right-short"></i>
+                    </form>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row bottom-footer">
+                <div class="col-lg-3 col-md-12 mb-3 footer-Logo d-flex justify-content-center">
+                    <img src="img/footerLogo.png">
+                </div>
+                <div class="col-lg-6 col-md-12 mb-3 d-flex justify-content-center align-items-center">
+                    <p class="text-center creds">© 2024 City Agenda . All Rights Reserved.</p>
+                </div>
+                <div class="col-lg-3 col-md-12 mb-3 d-flex flex-column align-items-sm-center justify-content-center footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons d-flex gap-3">
+                        <i class="bi bi-twitter"></i>
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-linkedin"></i>
+                        <i class="bi bi-tiktok"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="js/js.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.ticketBtn').on('click', function(event) {
+                var target = $($(this).attr('href'));
+    
+                if (target.hasClass('show')) {
+                    // Prevent the button from toggling the collapse if it's already active
+                    event.preventDefault();
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

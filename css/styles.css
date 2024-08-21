@@ -123,7 +123,7 @@ input, select, textarea, ul, li, button,
 
 
 .banner{
-    padding:100px 20px 50px;
+    padding:50px 20px;
     background-image: url('../img/bannerbgImg.png');
     background-position: center;
     background-size: cover;
@@ -148,7 +148,7 @@ input, select, textarea, ul, li, button,
 }
 
 .banner-img{
-    width: 220px;
+    width: 330px;
 }
 
 
@@ -201,9 +201,10 @@ input, select, textarea, ul, li, button,
 }
 
 .main-section h2{
-    font-size: 45px;
+    font-size: 35px;
     font-weight: 700;
     color:#000;
+    margin-bottom: 0px;
 }
 
 
@@ -216,7 +217,7 @@ input, select, textarea, ul, li, button,
 .category-content h2{
     text-align: center;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 
@@ -1175,13 +1176,13 @@ button.next {
 
 .event-sec h1{
     font-weight: 700;
-    font-size:60px;
+    font-size:40px;
     margin-bottom: 0px;
 }
 
 .event-sec h2{
     font-weight: 700;
-    font-size:50px;
+    font-size:30px;
     margin-bottom: 0px;
 }
 
@@ -1193,7 +1194,7 @@ button.next {
 
 .event-sec h4{
     font-weight: 700;
-    font-size:25px;
+    font-size:20px;
     margin-bottom: 0px;
 }
 
@@ -1466,6 +1467,7 @@ button.next {
     background-color: #F9F9F9;
     border-radius: 50px;
     color:#000;
+    outline: none!important;
 }
 
 
@@ -1477,7 +1479,7 @@ button.next {
     color:#fff;
     font-weight: 500;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .login-form input::placeholder{
@@ -1486,26 +1488,28 @@ button.next {
 }
 
 .login-sec{
-    padding:5% 5% 5% 13%!important;
+    padding:3% 3% 3% 13%!important;
 }
 
 
 .login-sec .regLogo{
-    width: 250px;
+    width: 150px;
     margin-bottom: 40px;
 }
 
 
 .login-sec h2{
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 700;
     margin-bottom:0px;
+    text-align: center;
 }
 
 .login-sec p{
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 400;
     margin-bottom:0px;
+    text-align: center;
 }
 
 .login-sec p a{
@@ -1531,10 +1535,12 @@ button.next {
     gap:10px;
     align-items: center;
     padding-left:10px;
+    width: 50%;
 }
 
 .forgot-checkbox label{
-    font-weight: 500;
+    font-weight: 400;
+    font-size: 15px;
 }
 
 .sign-up-with button{
@@ -1557,13 +1563,28 @@ button.next {
 }
 
 .sign-up-with button span{
-    width: 40%;
+    width: auto;
     text-align: left;
+    font-size: 16px;
 }
 
 
+.formCheckItem{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
 
+.formCheckItem a{
+    font-size: 14px;
+    color:#000;
+    text-decoration: none!important;
+    transition: .4s;
+}
 
+.formCheckItem a:hover{
+    color:#741774;
+}
 
 /* Modal Event */
 
@@ -1571,6 +1592,10 @@ button.next {
 .modal-dialog{
     max-width: 1000px!important;
     width: 100%!important;
+    height: 100vh;
+    margin: 0 auto!important;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -2068,7 +2093,7 @@ form.form-email input[type="submit"]{
 .progress-step .line {
     position: absolute;
     width: 80%;
-    right: -170px;
+    right: -40%;
     bottom:15px;
     height: 2px;
     background-color: #800080;
@@ -2085,6 +2110,7 @@ form.form-email input[type="submit"]{
 
 .progress-step p {
     font-weight: 600;
+    font-size: 20px;
 }
 
 
@@ -2280,10 +2306,42 @@ form.form-email input[type="submit"]{
 }
 
 
+.input-field .time{
+    font-size: 17px;
+    width: 100%;
+    padding:15px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #00000033;
+    border: 0;
+    outline: none;
+}
+
+.input-field .time select{
+    border: 0px;
+    outline: none!important;
+}
+
+.recurring-event{
+    display: none;
+}
+
+.recurring-event-active{
+    display: flex;
+}
+
+
 
 .location-inputs .input-field{
     flex-direction: column;
     gap:15px;
+}
+
+.location-inputs h3{
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    width:100%;
 }
 
 
@@ -3228,4 +3286,229 @@ form.form-email input[type="submit"]{
 
 .speaker-icons i{
     font-size: 30px;
+}
+
+
+.ticket-section{
+    padding:50px 20px;
+}
+
+
+.ticket-option-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+}
+
+.ticket-option-sec h3{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color:#000;
+}
+
+.ticket-option-sec p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    color:#000;
+}
+
+.ticket-option-items{
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+    width: 80%;
+}
+
+.tick-opt-item{
+    display: flex;
+    padding:25px;
+    border-radius: 20px;
+    gap:20px;
+    background-color:#F9F9F9;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tick-opt-item .img-option{
+    width: 10%;
+}
+
+.tick-opt-item .option-detials{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    justify-content: center;
+}
+
+.tick-opt-item .option-detials h4{
+    margin: 0px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.tick-opt-item .option-detials p{
+    margin: 0px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.tick-opt-item i{
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    background-color: #868686;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+}
+
+
+.ticket-modal-content{
+    width: 600px!important;
+    margin: auto;
+    padding:30px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.ticket-modal-content h3{
+    font-size: 35px;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+
+.modal-ticket-buttons-sec{
+    display: flex;
+    gap:10px;
+    margin-top: 30px;
+    overflow: auto;
+}
+
+.ticketBtn{
+    width: calc(100%/4)!important;
+    border: 1px solid transparent;
+    transition: .4s;
+    box-shadow: 0px 0px 5px #00000034;
+    font-size: 16px;
+    color:#000;
+    padding:15px;
+}
+
+
+
+
+.ticket-tab-sections .collapse,
+.ticket-tab-sections .collapsing{
+    padding:0;
+    margin: 0;
+    margin-top:20px;
+}
+
+.ticket-tab-sections .collapse .card{
+    border:0px;
+    padding:0px;
+}
+
+.ticket-tab-sections .collapsing{
+
+}
+
+.ticketBtn:hover{
+    box-shadow:0;
+    border: 1px solid #741774;
+    color:#741774;
+}
+
+
+.ticket-tab-sections form{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+.salesTimeSec{
+    display: flex;
+    gap:20px;
+}
+
+.ticket-tab-sections form label{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 600;
+    color:#000;
+}
+
+.ticket-tab-sections form label input{
+    padding:15px;
+    border-radius: 5px;
+    border:0;
+    font-size: 14px;
+    background-color: #F9F9F9;
+    outline: none!important;
+    border:0;
+}
+
+.ticket-tab-sections form .checkbox{
+    flex-direction: row;
+    margin:10px 0px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.ticket-tab-sections form label input::placeholder{
+    font-size: 14px;
+}
+
+
+.ticket-tab-sections .card form p{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    display: flex;
+    gap:5px;
+    margin: 10px 0px;
+}
+
+
+.formSubmit{
+    display: flex;
+    gap:20px;
+    width: 100%;
+}
+
+.formSubmit .formSubmit-btn-cancel{
+    border-radius: 6px;
+    font-weight: 600;
+    padding:15px;
+}
+
+
+.formSubmit .formSubmit-btn-submit{
+    border-radius: 6px;
+    font-weight: 600;
+    background-color: #741774;
+    color:#fff;
+    padding:15px;
+}
+
+.priceInput{
+    opacity: .8;
+    background-color: #0000002c!important;
+}
+
+
+.ticket-modal-content .bi-x-circle{
+    position: absolute;
+    top:20px;
+    right: 20px;
 }

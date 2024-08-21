@@ -22,16 +22,19 @@
 
     <section class="container-fluid">
         <div class="row flex-lg-row flex-column-reverse">
-            <div class="col-lg-6 col-md-12 d-flex flex-column gap-3 justify-content-center align-items-center login-sec">
+            <div class="col-lg-6 col-md-12 d-flex flex-column gap-2 justify-content-center align-items-center login-sec">
                 <img class="regLogo" src="img/reg-Img-Logo.png">
                 <h2>Welcome To Cityagenda</h2>
-                <p>Don't Have An Account ?Create An Account</p>
+                <!-- <p>Don't Have An Account ?Create An Account</p> -->
                 <form class="login-form">
-                    <input type="name" name="log-name" placeholder="Username">
+                    <input type="name" name="log-name" placeholder="Email Address">
                     <input type="password" name="log-pass" placeholder="Password">
-                    <div class="forgot-checkbox">
-                        <input type="checkbox">
-                        <label>Forget Your Password</label>
+                    <div class="formCheckItem">
+                        <div class="forgot-checkbox">
+                            <input type="checkbox">
+                            <label>Remember Me</label>
+                        </div>
+                        <a href="#">Forget Your Password</a>
                     </div>
                     <input type="submit" value="Login">
                 </form>
