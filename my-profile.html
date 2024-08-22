@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+  
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>City Agenda | About Us</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+  
+<body>
+    <nav class="navbar navbar-expand-lg main-nav container-fluid">
+        <div class="w-100 justify-content-center">
+            <div class="row w-100 align-items-center justify-content-end justify-content-sm-between">
+                <div class="col-md-7 ps-4 col-sm-10 d-flex align-items-center justify-content-between justify-content-lg-start">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="#">
+                        <img src="img/Logo.png" alt="Logo">
+                    </a>
+                    <!-- Search Form -->
+                    <form class="d-flex align-items-center gap-1 nav-form-search" role="search">
+                        <i class="bi bi-search"></i>
+                        <input class="form-control me-2" type="search" placeholder="Search City Agenda" aria-label="Search City Agenda">
+                    </form>
+                </div>
+                <!-- Toggler Button for Mobile -->
+                <div class="col-2 d-lg-none d-flex justify-content-end mt-0 mt-lg-0">
+                    <button class="navbar-toggler p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <!-- Navbar Links -->
+                <div class="col-md-5 col-sm-12 collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="d-flex gap-3 align-items-center nav-control justify-content-lg-end justify-content-between pt-lg-0 pb-lg-0 pt-sm-3 pb-sm-3 p-0">
+                        <a href="create-new-event-page.html"><button class="new-event" >Create New Event</button></a>
+                        <div class="nav-action d-flex gap-3 align-items-center">
+                            <!-- <i class="bi bi-people-fill"></i> -->
+                            <i class="bi bi-grid-3x3-gap-fill"></i>
+                            <hr class="d-none d-sm-block">
+                            <i class="bi bi-person-fill"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <section class="container-fluid my-profile-section">
+        <div class="container">
+            <h3><i class="bi bi-arrow-left"></i> Member Account</h3>
+            <div class="my-prof-tabs">
+                <button class="main-btn prof-tab-btn" data-bs-toggle="collapse" href="#my-profile" role="button" aria-expanded="true" aria-controls="my-profile">My Profile</button>
+                <button class="main-btn prof-tab-btn" data-bs-toggle="collapse" href="#my-listing" role="button" aria-expanded="true" aria-controls="my-listing">My Listing</button>
+                <button class="main-btn prof-tab-btn" data-bs-toggle="collapse" href="#my-booking" role="button" aria-expanded="true" aria-controls="my-booking">My Booking</button>
+                <button class="main-btn prof-tab-btn" data-bs-toggle="collapse" href="#payment-method" role="button" aria-expanded="true" aria-controls="payment-method">Payment Method</button>
+            </div>
+            <div class="prof-tab-section">
+                <form class="row collapse show" id="my-profile" data-bs-parent=".prof-tab-section">
+                    <div class="col-lg-12 mb-3">
+                        <div class="label-prof">
+                            <p>Details</p>
+                            <a href="#">Edit</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 mb-3 d-flex gap-3 flex-wrap formInput">
+                        <input type="text" class="form-control" placeholder="Name">
+                        <input type="text" class="form-control" placeholder="Job Title">
+                        <input type="email" class="form-control" placeholder="Email Address">
+                        <input type="tel" class="form-control" placeholder="Phone Number">
+                    </div>
+                    <div class="col-lg-12 mb-3 d-flex align-items-center">
+                        <div class="label-prof">
+                            <p>Security</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-3 d-flex align-items-center">
+                        <a href="#">Login Password</a>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-3 d-flex align-items-center justify-content-start justify-content-lg-end">
+                        <button class="main-btn prof-changepass-btn">Change Password</button>
+                    </div>
+                    <div class="col-lg-6 mb-3 d-flex align-items-center">
+                        <a href="#">Two-factor Authentication</a>
+                    </div>
+                    <div class="col-lg-6 mb-3 d-flex align-items-center justify-content-start justify-content-lg-end">
+                        <div class="form-check form-switch">
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Enabled</label>
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 mb-3 d-flex align-items-center">
+                        <a href="#" class="deactive-acct">Deactivate Account</a>
+                    </div>
+                </form>
+
+                <div class="row collapse" id="my-listing" data-bs-parent=".prof-tab-section">
+                    <div class="d-flex align-items-center bg-light p-2 rounded">
+                        <!-- Dropdown or Label -->
+                        <div class="me-2 me-lg-3">
+                            <span>Present</span> <span class="text-muted">03</span>
+                        </div>
+                        
+                        <!-- Search Input -->
+                        <div class="flex-grow-1 me-3">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+            
+                        <!-- Action Icons -->
+                        <div class="d-flex align-items-center">
+                            <button class="btn btn-light me-2 mobile">
+                                <i class="bi bi-plus"></i> <!-- Add Event -->
+                            </button>
+                            <button class="btn btn-light me-2 mobile">
+                                <i class="bi bi-pencil"></i> <!-- Edit Event -->
+                            </button>
+                            <button class="btn btn-light me-2 mobile">
+                                <i class="bi bi-envelope"></i> <!-- Send Invite -->
+                            </button>
+                            <button class="btn btn-light me-2 mobile">
+                                <i class="bi bi-trash"></i> <!-- Delete -->
+                            </button>
+                            <button class="btn btn-light mobile">
+                                <i class="bi bi-three-dots-vertical"></i><!-- More Options -->
+                            </button>
+                            <div class="dropdown dropdownMorebtn">
+                                <button class="btn btn-light" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                                    <i class="bi bi-three-dots-vertical"></i><!-- More Options -->
+                                </button>
+                                <div class="dropdown-menu">
+                                    <button class="btn btn-light me-2 ">
+                                        <i class="bi bi-plus"></i> <p>Add Event</p>
+                                    </button>
+                                    <button class="btn btn-light me-2 ">
+                                        <i class="bi bi-pencil"></i> <p>Edit Event</p>
+                                    </button>
+                                    <button class="btn btn-light me-2 ">
+                                        <i class="bi bi-envelope"></i> <p>Send Invite</p>
+                                    </button>
+                                    <button class="btn btn-light me-2">
+                                        <i class="bi bi-trash"></i> <p>Delete</p> 
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-hover listing-section">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="align-middle"><input type="checkbox"></th>
+                                    <th scope="col" class="align-middle">Event Id</th>
+                                    <th scope="col" class="align-middle">Event Name</th>
+                                    <th scope="col" class="align-middle">Location</th>
+                                    <th scope="col" class="align-middle">Date & Time</th>
+                                    <th scope="col" class="align-middle">Sold</th>
+                                    <th scope="col" class="align-middle">Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="selected">
+                                    <td class="align-middle"><input type="checkbox" checked></td>
+                                    <td class="align-middle">3281830</td>
+                                    <td class="align-middle">First Ever Digital Concert Event 2024</td>
+                                    <td class="align-middle">Korte Leidsedwarsstraat 49, 1017 PW, Amsterdam, Netherlands</td>
+                                    <td class="align-middle">Jul 19, 2024 · 01:00 AM <br> Saturday</td>
+                                    <td class="align-middle">20</td>
+                                    <td class="align-middle">€35</td>
+                                </tr>
+                                <tr>
+                                    <td class="align-middle"><input type="checkbox"></td>
+                                    <td class="align-middle">1288917</td>
+                                    <td class="align-middle">The Ultimate Lineup for a Dream Football match between NL & Brazil</td>
+                                    <td class="align-middle">Sportpark Spieringhorn 10, 1043 AA, Amsterdam, Netherlands</td>
+                                    <td class="align-middle">Jul 20, 2024 · 01:00 AM <br> Sunday</td>
+                                    <td class="align-middle">08</td>
+                                    <td class="align-middle">€120</td>
+                                </tr>
+                                <tr>
+                                    <td class="align-middle"><input type="checkbox"></td>
+                                    <td class="align-middle">8933760</td>
+                                    <td class="align-middle">Exploring the World Through Culture</td>
+                                    <td class="align-middle">Frederik Hendrikstraat 111, 1052 HN, Amsterdam, Netherlands</td>
+                                    <td class="align-middle">Jul 19, 2024 · 01:00 AM <br> Saturday</td>
+                                    <td class="align-middle">124</td>
+                                    <td class="align-middle"><span class="text-purple">Free</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="row collapse" id="my-booking" data-bs-parent=".prof-tab-section">
+                    <div class="d-flex align-items-center bg-light p-2 rounded">
+                        <!-- Dropdown or Label -->
+                        <div class="me-3">
+                            <div class="dropdown">
+                                <span class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Present</span> <span class="text-muted">03</span>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Present 01</a></li>
+                                  <li><a class="dropdown-item" href="#">Present 02</a></li>
+                                  <li><a class="dropdown-item" href="#">Present 03</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                        
+                        <!-- Search Input -->
+                        <div class="flex-grow-1 me-3">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+            
+                        <!-- Action Icons -->
+                        <div class="d-flex align-items-center">
+                            <button class="btn btn-light me-2 mobile">
+                                <i class="bi bi-envelope"></i> <!-- Send Invite -->
+                            </button>
+                            <button class="btn btn-light me-2 mobile">
+                                <i class="bi bi-trash"></i> <!-- Delete -->
+                            </button>
+                            <button class="btn btn-light mobile">
+                                <i class="bi bi-three-dots-vertical"></i> <!-- More Options -->
+                            </button>
+                            <div class="dropdown dropdownMorebtn">
+                                <button class="btn btn-light" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                                    <i class="bi bi-three-dots-vertical"></i><!-- More Options -->
+                                </button>
+                                <div class="dropdown-menu">
+                                    <button class="btn btn-light me-2 ">
+                                        <i class="bi bi-envelope"></i> <p>Send Invite</p>
+                                    </button>
+                                    <button class="btn btn-light me-2">
+                                        <i class="bi bi-trash"></i> <p>Delete</p> 
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-hover listing-section">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="align-middle"><input type="checkbox"></th>
+                                    <th scope="col" class="align-middle">Event Id</th>
+                                    <th scope="col" class="align-middle">Event Name</th>
+                                    <th scope="col" class="align-middle">Location</th>
+                                    <th scope="col" class="align-middle">Date & Time</th>
+                                    <th scope="col" class="align-middle">Status</th>
+                                    <th scope="col" class="align-middle">Type</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="selected">
+                                    <td class="align-middle"><input type="checkbox" checked></td>
+                                    <td class="align-middle">3281830</td>
+                                    <td class="align-middle">First Ever Digital Concert Event 2024</td>
+                                    <td class="align-middle">Korte Leidsedwarsstraat 49, 1017 PW, Amsterdam, Netherlands</td>
+                                    <td class="align-middle">Jul 19, 2024 · 01:00 AM <br> Saturday</td>
+                                    <td class="align-middle">Confirmed</td>
+                                    <td class="align-middle">Concert</td>
+                                </tr>
+                                <tr>
+                                    <td class="align-middle"><input type="checkbox"></td>
+                                    <td class="align-middle">1288917</td>
+                                    <td class="align-middle">The Ultimate Lineup for a Dream Football match between NL & Brazil</td>
+                                    <td class="align-middle">Sportpark Spieringhorn 10, 1043 AA, Amsterdam, Netherlands</td>
+                                    <td class="align-middle">Jul 20, 2024 · 01:00 AM <br> Sunday</td>
+                                    <td class="align-middle"><span class="text-postpond">Postpond</span></td>
+                                    <td class="align-middle">Sports</td>
+                                </tr>
+                                <tr>
+                                    <td class="align-middle"><input type="checkbox"></td>
+                                    <td class="align-middle">8933760</td>
+                                    <td class="align-middle">Exploring the World Through Culture</td>
+                                    <td class="align-middle">Frederik Hendrikstraat 111, 1052 HN, Amsterdam, Netherlands</td>
+                                    <td class="align-middle">Jul 19, 2024 · 01:00 AM <br> Saturday</td>
+                                    <td class="align-middle"><span class="text-canceled">Canceled</span></td>
+                                    <td class="align-middle">Cultures</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+                <div class="row collapse" id="payment-method" data-bs-parent=".prof-tab-section">
+                    <div class="text-center mb-4">
+                        <div class="add-payment-method">
+                            <i class="bi bi-plus-lg"></i>
+                            Add New Payment Method
+                        </div>
+                    </div>
+                    <p class="text-center">Choose payment method or add new if not already added</p>
+                    
+                    <div class="section-title mt-4">
+                        Bank Accounts <span class="text-muted">02</span>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-borderless">
+                            <thead>
+                                <tr>
+                                    <th>Account Name</th>
+                                    <th>Swift/BIC</th>
+                                    <th>IBAN</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Oussama</td>
+                                    <td>******2354</td>
+                                    <td>******3245</td>
+                                    <td class="text-purple">Selected</td>
+                                </tr>
+                                <tr>
+                                    <td>Tim Lincoln</td>
+                                    <td>******1287</td>
+                                    <td>******6957</td>
+                                    <td><a href="#" class="text-purple">Select</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="section-title mt-4">
+                        Credit Cards <span class="text-muted">01</span>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-borderless">
+                            <thead>
+                                <tr>
+                                    <th>Account Name</th>
+                                    <th>Swift/BIC</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Visa (Credit Card)</td>
+                                    <td>xxxxxx1124</td>
+                                    <td>Valid</td>
+                                    <td><a href="#" class="text-purple">Select</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <footer class="container-fluid footer-section">
+        <section class="container">
+            <div class="row top-footer">
+                <div class="col-lg-3 col-md-4 col-sm-12 mb-3">
+                    <h4>Plan Events</h4>
+                    <ul>
+                        <li><a href="#">Publish Your Events</a></li>
+                        <li><a href="#">Promote Your Events</a></li>
+                        <li><a href="#">Sell Tickets Online</a></li>
+                        <li><a href="#">Host Recorded Events</a></li>
+                        <li><a href="#">Pricing Plans</a></li>
+                        <li><a href="#">Event Manager App</a></li>
+                        <li><a href="#">Rank Your Event</a></li>
+                        <li><a href="#">Event Listing</a></li>
+                        <li><a href="#">Learn Event Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 mb-3">
+                    <h4>Find Events</h4>
+                    <ul>
+                        <li><a href="#">Events for You</a></li>
+                        <li><a href="#">Virtual Events</a></li>
+                        <li><a href="#">Get Event Updates</a></li>
+                        <li><a href="#">Event Discovery App</a></li>
+                        <li><a href="#">Write for Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-12 mb-3">
+                    <h4>Connect With Us</h4>
+                    <ul>
+                        <li><a href="#">Contact Support</a></li>
+                        <li><a href="#">Contact Sales</a></li>
+                        <li><a href="#">X</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12 mb-3 d-flex justify-content-center align-items-center newsletter-col">
+                    <h2>Subscribe To Our Newsletter</h2>
+                    <form class="newsletter-form container d-flex justify-content-between align-items-center">
+                        <input type="email" placeholder="Email Here">
+                        <i class="bi bi-arrow-right-short"></i>
+                    </form>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row bottom-footer">
+                <div class="col-lg-3 col-md-12 mb-3 footer-Logo d-flex justify-content-center">
+                    <img src="img/footerLogo.png">
+                </div>
+                <div class="col-lg-6 col-md-12 mb-3 d-flex justify-content-center align-items-center">
+                    <p class="text-center creds">© 2024 City Agenda . All Rights Reserved.</p>
+                </div>
+                <div class="col-lg-3 col-md-12 mb-3 d-flex flex-column align-items-sm-center justify-content-center footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons d-flex gap-3">
+                        <i class="bi bi-twitter"></i>
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-linkedin"></i>
+                        <i class="bi bi-tiktok"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="js/js.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // Handle the 'select-all' checkbox click
+            $('#select-all').on('change', function() {
+                // Toggle all row checkboxes based on the 'select-all' checkbox status
+                $('.row-checkbox').prop('checked', $(this).prop('checked'));
+            });
+
+            // Handle individual row checkbox click to update the 'select-all' checkbox
+            $('.row-checkbox').on('change', function() {
+                // If all checkboxes are checked, check the 'select-all' checkbox; otherwise, uncheck it
+                $('#select-all').prop('checked', $('.row-checkbox:checked').length === $('.row-checkbox').length);
+            });
+        });
+    </script>
+
+  </body>
+</html>

@@ -604,5 +604,63 @@
     .tick-opt-item .option-detials{
         gap:5px;
     }
+
+
+    .ticket-card-items{
+        flex-wrap: wrap;
+        row-gap: 10px;
+        justify-content: space-between;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .card-item-detils{
+        width: 100%;
+    }
+
+    .card-sold, .card-free{
+        width: 50%;
+    }
+
+    .ticket-card-items .dropdown{
+        width: 10%;
+    }
+
+    .my-prof-tabs{
+        display: -webkit-box;
+        padding-bottom: 10px;
+    }
+
+
+    .my-prof-tabs button{
+        width: 140px;
+    }
+
+    .formInput input{
+        width: 100%;
+    }
+
+    table{
+        width: 900px !important;
+    }
+
+    th:nth-child(2){
+        width: 100px;
+    }
+
+    .listing-section tbody tr td,
+    .listing-section thead tr th{
+        font-size: 15px!important;
+    }
+
+    .btn-light.mobile{
+        display: none;
+    }
+
+
+    .dropdownMorebtn{
+        display: block;
+    }
+
     
 }
