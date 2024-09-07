@@ -19,6 +19,15 @@
         width: 50% !important;
     }
 
+    #hide-phone{
+        display: none !important;
+     }
+ 
+     #hide-phone2{
+         display: none !important;
+      }
+
+   
 
     .ticket-card-items{
         margin: 0 !important;
@@ -299,12 +308,14 @@
         margin: 10px; /* Space around items */
     }
 
+    .slider-controls {
+        padding: 30px 10px;
+
+    }
     .slider-nav {
         display: block; /* Show navigation buttons on mobile */
-        position: absolute;
-        top: 50%;
         transform: translateY(-50%);
-        background-color: #7417749d;
+        background-color: #741774;
         color: white;
         border: none;
         padding: 10px;
@@ -320,6 +331,7 @@
 
     .slider-nav-left {
         left: 0;
+        margin-right: 20px;
     }
 
     .slider-nav-right {
@@ -737,5 +749,5 @@
         display: block;
     }
 
-    
+  
 }

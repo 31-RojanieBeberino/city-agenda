@@ -110,8 +110,6 @@
             <div class="category-content">
                 <h2 class="mb-4">Discover Top Categories</h2>
                 <div class="position-relative">
-                    <!-- Left Navigation Button -->
-                    <button class="slider-nav slider-nav-left bi-arrow-left-short" onclick="slideLeft()"></button>
                     <div class="category-section d-flex overflow-hidden">
                         <div class="category-slider d-flex">
                             <a href="category-politics.html"><img src="img/politics.png" alt="Politics"></a>
@@ -122,8 +120,11 @@
                             <a href="category-cultures.html"><img src="img/cultures.png" alt="Cultures"></a>
                         </div>
                     </div>
-                    <!-- Right Navigation Button -->
-                    <button class="slider-nav slider-nav-right bi bi-arrow-right-short" onclick="slideRight()"></button>
+                    <!-- Navigation Buttons moved to the bottom -->
+                    <div class="slider-controls d-flex justify-content-center mt-3">
+                        <button class="slider-nav slider-nav-left  bi-arrow-left-short" onclick="slideLeft()"></button>
+                        <button class="slider-nav slider-nav-right  bi-arrow-right-short" onclick="slideRight()"></button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -141,7 +142,21 @@
                         <h3> New York </h3><img src="img/note-Icon.png">
                     </div>
                 </div>
-                <div class="col-lg-8 col-md-12 mt-4 mt-lg-0 d-flex gap-2 flex-column flex-md-row">
+                <div class="col-lg-8 col-md-12 mt-4 mt-lg-0 d-flex gap-4 flex-column flex-md-row">
+                    <div id = "hide-phone" class=" hide-phone drop-cards d-flex flex-column justify-content-center">
+                        <h4>Select Location</h4>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-geo-alt-fill"></i>
+                                My Location
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
                     <div class="drop-cards d-flex flex-column justify-content-center">
                         <h4>Select Date</h4>
                         <div class="dropdown">
@@ -156,9 +171,26 @@
                             </ul>
                         </div>
                     </div>
+                    <div id = "hide-phone2" class=" drop-cards d-flex flex-column justify-content-center">
+                        <h4>Select Category</h4>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Category
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="category-politics.html">Politics</a></li>
+                              <li><a class="dropdown-item" href="category-religions.html">Religions</a></li>
+                              <li><a class="dropdown-item" href="category-business.html">Business</a></li>
+                              <li><a class="dropdown-item" href="category-sports.html">Sports</a></li>
+                              <li><a class="dropdown-item" href="caterory-education.html">Education</a></li>
+                              <li><a class="dropdown-item" href="category-cultures.html">Cultures</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
         <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-12 mb-4 col-">
                 <div class="card" style="width: 100%;">
