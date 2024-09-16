@@ -50,6 +50,8 @@ input, select, textarea, ul, li, button,
 }
 
 
+
+
 h1, h2 {
     font-size: clamp(28px, 5vw, 40px) !important;
 }
@@ -71,6 +73,17 @@ p {
 
 
 
+
+/* for heart button */
+
+.heartIcon {
+    color: gray; /* Initial color for the heart */
+    font-size: 24px;
+    cursor: pointer;
+}
+.heartIcon.active {
+    color: red !important; /* Red color when clicked */
+}
 
 
 .banner{
@@ -302,7 +315,7 @@ p {
 .heartIcon{
     width: 30px!important;
     height: 30px!important;
-    background-color: #00000036!important;
+    background-color: #8a8a8a36!important;
     border-radius: 50px!important;
     display: flex!important;
     align-items: center!important;
@@ -310,7 +323,7 @@ p {
     font-size: 15px!important;
     color:#fff!important;
     position: absolute!important;
-    top:270px!important;
+    bottom: 90px;
     right: 20px!important;
 }
 

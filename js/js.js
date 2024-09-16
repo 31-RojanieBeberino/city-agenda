@@ -224,3 +224,10 @@ $(document).ready(function(){
                     todayHighlight: true
                 });
             });
+
+
+            function toggleFavorite(button) {
+                // Find the icon within the button and toggle the "active" class
+                const heartIcon = button.querySelector('.heartIcon');
+                heartIcon.classList.toggle('active');
+            }
