@@ -272,7 +272,7 @@
     }
 
     .heartIcon{
-        top:170px!important;
+        top:130px!important;
     }
 
     .banner.inner-page h3{
@@ -662,5 +662,12 @@
         display: block;
     }
 
+    .cardImg{
+        height: 180px;
+    }
+
+    .card-body h3{
+        font-size: 18px!important;
+    }
     
 }
