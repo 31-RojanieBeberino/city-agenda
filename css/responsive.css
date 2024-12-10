@@ -1,76 +1,256 @@
-/* Media Query for Mobile: 1 item visible */
-@media (max-width: 768px) {
-    .slide {
-        flex: 0 0 100%;
-    }
-
-    .ticket-container {
-        display: flex !important;
-        flex-direction: row;
-    }
-    .ticket-dashboard{
-        padding: 0;
-        border: none;
-       
-    }
-    .event-card-item{
-        padding: 50px 10px !important;
-        margin-top: -2px;
-        width: 50% !important;
-    }
-
-    #hide-phone{
-        display: none !important;
-     }
- 
-     #hide-phone2{
-         display: none !important;
+@media screen and (max-width: 2560px) {
+    .bannerInner {
+        height: 510px;
       }
+      .bannerInnerContent {
+        display: flex;
+        justify-content: flex-end; 
+        margin-top: 122px !important;
+        margin-left: auto; 
+        position: relative; 
+    }
+    
+    .bannerInnerContent h1 {
+        font-size: 60px !important; 
+        text-align: right; 
+        white-space: nowrap; 
+        position: absolute; 
+        right: 704px; 
+    }
+    #events-container{
+        margin-left: -32px;
+    }
+    #city-name-local-language{
+        margin-top: 86px;
+    }
+}
 
-   
+@media screen and (max-width: 1920px) {
+    .bannerInner {
+        height: 380px;
+      }
+      .bannerInnerContent {
+        display: flex;
+        justify-content: flex-end; 
+        margin-top: 86px !important;
+        margin-left: auto; 
+        position: relative; 
+    }
+    
+    .bannerInnerContent h1 {
+        font-size: 40px !important; 
+        text-align: right; 
+        white-space: nowrap; 
+        position: absolute; 
+        right: 884px; 
+    }
+    #city-name-local-language{
+        margin-top: 66px;
+    }
+}
+@media screen and (max-width: 1440px) {
 
-    .ticket-card-items{
-        margin: 0 !important;
-        display: flex !important;
-        flex-wrap: wrap;
-        width: 100% !important;
-        gap: 0;
+    .bannerInner {
+      height: 288px;
+    }
+    .bannerInnerContent {
+        display: flex;
+        justify-content: flex-end; 
+        margin-top: 68px !important;
+        margin-left: auto; 
+        position: relative; 
+    }
+    
+    .bannerInnerContent h1 {
+        font-size: 34px !important; 
+        text-align: right; 
+        white-space: nowrap; 
+        position: absolute; 
+        right: 1006px; 
+    }
+    .bot-slider-sec .next{
+        margin-right: 6px;
+    }
+    #events-container{
+        margin-left: -32px;
+    }
+    #city-name-local-language{
+        margin-top: 50px;
+    }
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .slick-slider{
+        margin-left: 8px !important;
+    }
+  }
+  /* new responsive code is here  */
+
+  @media only screen and (max-width:1042px){
+    .profileSection, .contentSection{
+        width: 100%;
     }
 
-    .desktop-show{
+
+    .desktop{
         display: none;
     }
-   
 
-    .phone-show{
+
+    .mobile{
         display: block;
-        border-left: 1px gray solid;
-        height: 100% !important;
-        width: 50% !important;
+    }
+
+    .userBanner img{
+        height: 350px;
+    }
+
+    .orgSection{
+        width: 100%;
+    }
+
+    .heartIcon{
+        top:120px!important;
+    }
+
+
+    .colOne{
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .colOne img{
+        width: 47%;
+    }
+
+
+    .event-count .countdown .countLabel h3{
+        font-size:25px!important;
+    }
+    
+    .event-count .countdown .countLabel span{
+        font-size:12px!important;
+    }
+
+
+
+    .event-count .countdown .countLabel{
+        width: 80px;
+        height: 80px;
+    }
+
+
+    .colThree img{
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
     }
  
 
-}
-
-/* Media Query for Tablet: 3 items visible */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .slide {
-        flex: 0 0 33.33%;
+    .icon-controls{
+        justify-content: center;
     }
-}
 
+    
+
+    .event-user-sec, .user-profile{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+
+    .user-profile ul li::after{
+        display: none;
+    }
+
+    .date-location{
+        flex-direction: column;
+    }
+
+    .dl-sec{
+        width: 100%;
+    }
+
+    .agendaCards{
+        flex-direction: column;
+    }
+
+    .cardDate, .cardDetails{
+        width:100%;
+        padding:25px;
+    }
+
+
+    .speakerItem{
+        width: 100%;
+    }
+
+
+    .sponPartImgs{
+        flex-wrap: wrap;
+    }
+
+
+    .sponPart{
+        padding:60px 20px;
+    }
+
+    .sponPartImgs img{
+        width: 50%;
+        padding: 10px;
+    }
+
+
+    .footer-Logo{
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-social{
+        align-items: center;
+    }
+
+    .fqsSec h3,
+    .sponPart h3,
+    .spkrSect h2{
+        font-size: 30px;
+    }
+
+    .url-input, .copy-button{
+        width: 100%;
+    }
+
+
+    .bannerInner{
+        height: 205px;
+    }
+
+    .bannerInnerContent h1{
+        font-size: 50px;
+    }
+
+    .btnSection{
+        justify-content: flex-start;
+    }
+
+    .orgInnerSec h2, 
+    .mapSection h2,
+    .filterTitle h2,
+    .bannerInnerContent h1{
+        font-size: 35px;
+    }
+
+    
+
+}
 /* Default: 5 items visible on larger screens */
 @media (min-width: 1025px) {
     .slide {
         flex: 0 0 20%;
     }
 }
-
-
-
-
 @media screen and (max-width:1024px){
-
     .search-input{
         width: 70%!important;
     }
@@ -248,17 +428,183 @@
         font-size: 25px!important;
     }
 
-
+    .bannerInnerContent {
+        display: flex;
+        justify-content: flex-end; 
+        margin-top: 49px !important;
+        margin-left: auto; 
+        position: relative; 
+    }
     
+    .bannerInnerContent h1 {
+        font-size: 25px !important; 
+        text-align: right; 
+        white-space: nowrap; 
+        position: absolute; 
+        right: 736px; 
+    }
+    #events-container{
+        margin-left: -32px;
+    }
+    .orgInnerSec h2,.mapSection h2, .filterTitle h2{
+        font-size: 38px !important;
+    }  
+    #city-name-local-language{
+        margin-top: 38px;
+    }  
     
-
-    
+}
+/* Media Query for Tablet: 3 items visible */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .slide {
+        flex: 0 0 33.33%;
+    }
+    .orgnizer-profile-img{
+        margin-left: 48px !important;
+    }
+    .slick-slider{
+        margin-left: 5px !important;
+    }
+    .bot-slider-sec .prev {
+        margin-left: -40px !important;
+        margin-top: -12px !important;
+    }
+    .bot-slider-sec .next{
+        margin-right: -40px !important;
+        margin-top: -12px !important;
+    }
 }
 
 
 
+/* Hide controls in desktop view (min-width: 992px for large screens) */
+@media (min-width: 992px) {
+    .carousel-control-prev,
+    .carousel-control-next {
+      display: none !important;
+    }
+  }
+  
+  /* Show controls in mobile view (max-width: 991px for tablets and smaller screens) */
+  @media (max-width: 991px) {
+    .carousel-control-prev,
+    .carousel-control-next {
+      display: block;
+    }
+  }
 
+/* Media Query for Mobile: 1 item visible */
+@media (max-width: 768px) {
+    .slide {
+        flex: 0 0 100%;
+    }
 
+    .ticket-container {
+        display: flex !important;
+        flex-direction: row;
+    }
+    .ticket-dashboard{
+        padding: 0;
+        border: none;
+       
+    }
+    .event-card-item{
+        padding: 50px 10px !important;
+        margin-top: -2px;
+        width: 50% !important;
+    }
+
+    #hide-phone{
+        display: none !important;
+     }
+ 
+     #hide-phone2{
+         display: none !important;
+      }
+
+   
+
+    .ticket-card-items{
+        margin: 0 !important;
+        display: flex !important;
+        flex-wrap: wrap;
+        width: 100% !important;
+        gap: 0;
+    }
+
+    .desktop-show{
+        display: none;
+    }
+   
+    .phone-show{
+        display: block;
+        border-left: 1px gray solid;
+        height: 100% !important;
+        width: 50% !important;
+    }
+    /*  */
+    .bannerInner{
+        height: 154px !important;
+    }
+    .bannerInnerContent {
+        display: flex;
+        justify-content: flex-end; 
+        margin-top: 38px !important;
+        margin-left: auto; 
+        position: relative; 
+    }
+    
+    .bannerInnerContent h1 {
+        font-size: 18px !important; 
+        text-align: right; 
+        white-space: nowrap; 
+        position: absolute; 
+        right: 550px; 
+    }
+    .orgPerCard{
+        margin-left: 19px;
+    }
+    .bot-slider-sec .prev{
+        margin-top: -22px !important;
+    }
+
+    .bot-slider-sec .next{
+        margin-top: -22px !important;
+    }
+    #events-container{
+        margin-left: -32px;
+    }
+    .orgInnerSec h2,.mapSection h2, .filterTitle h2{
+        font-size: 36px !important;
+    }  
+    #city-name-local-language{
+        margin-top: 30px;
+    }  
+ 
+
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    .follow-btn {
+     margin-left: 100px !important;
+ }
+     .orgnizer-profile-img{
+     margin-left: 100px !important;
+     margin-top: 34px !important;
+ }
+ .slick-slider{
+     margin-left: -10px !important;
+ }
+}
+
+@media screen and (max-width:500px){
+    .bannerInner{
+        height: 250px;
+        background-size: cover;
+    }
+    .dropdown-toggle{
+        width: 100%!important;
+    }
+}
 @media screen and (max-width:500px){
 
 
@@ -360,9 +706,6 @@
         text-align: center;
     }
 
-    .heartIcon{
-        top:140px!important;
-    }
 
     .banner.inner-page h3{
         font-size: 35px;
@@ -590,7 +933,7 @@
     }
 
     .icon-controls{
-        justify-content: flex-start;
+        justify-content: center;
     }
 
     .find-free-political-section{
@@ -749,43 +1092,182 @@
         display: block;
     }
 
-    .cardImg{
-        height: 180px!important;
-    }
-
-    .user-id{
-        width: 40px!important;
-        height: 40px!important;
-    }
-
-
-    .uploadButton{
-        flex-direction: column;
-        width: 100%!important;
-    }
-
-    .uploadBtn{
-        padding: 15px!important;
-        width: 100%!important;
-    }
-
-    .event-input-detials-section .event-date-section .group-toggle{
-        width: 100%;
-        flex-direction: column;
-    }
-    
 
     .carousel-control-next, .carousel-control-prev{
-        width: 50px!important;
         height: 50px!important;
+        width: 50px!important;
     }
 
     i.bi.bi-arrow-left-short, i.bi.bi-arrow-right-short{
-        font-size: 35px!important;
+        font-size: 30px!important;
     }
 
     .carousel-control-section{
-        width: 120px!important;
-        margin-top: 20px!important;
+        width: 130px!important;
+        margin-top: 20px;
     }
+
+  
 }
+@media screen and (max-width: 425px) {
+    .bannerInner {
+        background-position: -45px center;
+    }
+    .bannerInnerContent {
+        display: flex;
+        justify-content: flex-end; 
+        margin-top: 37px !important;
+        margin-left: auto; 
+        position: relative; 
+    }
+    
+    .bannerInnerContent h1 {
+        font-size: 18px !important; 
+        text-align: right; 
+        white-space: nowrap; 
+        position: absolute; 
+        right: 250px; 
+    }
+    .bot-slider-sec .prev{
+        margin-top: -32px !important;
+        margin-left: -22px !important;
+    }
+
+    .bot-slider-sec .next{
+        margin-top: -32px !important;
+        margin-right: -22px !important;
+    }
+
+    .orgPerCard{
+        margin-left: 10px;
+    }
+    #events-container{
+        margin-left: -32px;
+    }
+    .orgInnerSec h2,.mapSection h2, .filterTitle h2{
+        font-size: 30px !important;
+    } 
+    #city-name-local-language{
+        margin-top: 30px;
+    } 
+
+
+    .card .cardImg{
+        height: 180px;
+    }
+
+    .user-id{
+        width: 30px!important;
+        height: 30px!important;
+    }
+
+    .heartIcon{
+        right:20px!important;
+        width: 25px!important;
+        height: 25px!important;
+        font-size: 14px!important;
+    }
+
+  }
+  @media screen and (min-width: 376px) and (max-width: 425px) {
+    .bottom-slider-sec .slide img {
+        margin-left: 116px !important;
+    }
+    .follow-btn {
+        margin-top: 5px !important;
+        margin-left: 138px !important;
+    }
+  }
+
+  @media screen and (max-width: 376px) {
+    .bannerInnerContent {
+        display: flex;
+        justify-content: flex-end; 
+        margin-top: 36px !important;
+        margin-left: auto; 
+        position: relative; 
+    }
+    
+    .bannerInnerContent h1 {
+        font-size: 18px !important; 
+        text-align: right; 
+        white-space: nowrap; 
+        position: absolute; 
+        right: 200px; 
+    }
+    .bot-slider-sec .prev{
+        margin-top: -32px !important;
+        margin-left: -19px !important;
+    }
+
+    .bot-slider-sec .next{
+        margin-top: -32px !important;
+        margin-right: -8px;
+    }
+    .orgPerCard{
+        margin-left: 7px;
+    }
+    .orgnizer-profile-img{
+        margin-left: 94px !important;
+    }
+    .follow-btn {
+        margin-left: 114px !important;
+    }
+    #events-container{
+        margin-left: -32px;
+    }
+    .orgInnerSec h2,.mapSection h2, .filterTitle h2{
+        font-size: 30px !important;
+    } 
+    #city-name-local-language{
+        margin-top: 30px;
+    } 
+
+  }
+  @media screen and (max-width: 320px) {
+    .bannerInner {
+        background-position: -30px center;
+    }
+    .bannerInnerContent {
+        display: flex;
+        justify-content: flex-end; 
+        margin-top: 37px !important;
+        margin-left: auto; 
+        position: relative; 
+    }
+    
+    .bannerInnerContent h1 {
+        font-size: 18px !important; 
+        text-align: right; 
+        white-space: nowrap; 
+        position: absolute; 
+        right: 132px; 
+    }
+ 
+    .bot-slider-sec .prev{
+        margin-top: -32px !important;
+        margin-left: -18px !important;
+    }
+
+    .bot-slider-sec .next{
+        margin-top: -32px !important;
+        margin-right: -8px;
+    }
+    .orgPerCard{
+        margin-left: 6px;
+    }
+    .orgnizer-profile-img{
+        margin-left: 72px !important;
+    }
+    .follow-btn {
+        margin-left: 94px !important;
+    }
+    #events-container{
+        margin-left: -32px;
+    }
+     .orgInnerSec h2,.mapSection h2, .filterTitle h2{
+        font-size: 26px !important;
+    }    
+ 
+  }
+
